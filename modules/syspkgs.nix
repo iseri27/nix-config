@@ -38,6 +38,9 @@
 
         qemu_full
 
+        xorg.xinit
+        xorg.xbacklight
+
         # Python Packages:
         python310
         python310Packages.pip
