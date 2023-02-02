@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Exec=st
+Icon=st
+Terminal=false
+Categories=System;TerminalEmulator;
+
+Name=st
+GenericName=Simple Terminal
+Comment=A Very Simple Terminal
+Actions=New;
+
+[Desktop Action New]
+Name=新建终端
+Exec=st
