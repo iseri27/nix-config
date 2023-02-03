@@ -1,3 +1,4 @@
+''
 # .bashrc
 
 if [ -f /etc/bashrc ]; then
@@ -49,3 +50,4 @@ alias ep='export http_proxy="http://127.0.0.1:15777" && export https_proxy="http
 alias nep='unset http_proxy && unset https_proxy'
 
 eval "$(starship init bash)"
+''

@@ -1,3 +1,4 @@
+''
 # border=no
 geometry=0%:50%
 autofit-larger=1280x1054
@@ -31,3 +32,4 @@ screenshot-directory='~/Pictures/截图/'
 screenshot-format='png'
 
 # vim: ft=conf
+''

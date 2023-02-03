@@ -1,3 +1,4 @@
+''
 add_newline = false
 
 [character]
@@ -16,3 +17,4 @@ disabled = false
 bash_indicator = "bash"
 fish_indicator = "fish"
 elvish_indicator = "elvish"
+''

@@ -1,4 +1,4 @@
 { config, ... }:
 {
-    home.file.".bashrc".source = ./bashrc;
+    home.file.".bashrc".text = import ./bashrc.nix;
 }
