@@ -1,4 +1,3 @@
-''
 #!/usr/bin/env fish
 
 function cat
@@ -8,4 +7,3 @@ function cat
 		command cat $argv
 	end
 end
-''

@@ -1,7 +1,5 @@
-''
 #!/usr/bin/env fish
-function lsc
+function cls
     clear $argv
 end
 
-''

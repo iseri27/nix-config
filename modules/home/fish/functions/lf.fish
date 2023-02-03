@@ -1,4 +1,3 @@
-''
 function lf
 	set tmp (mktemp)
 	command lf -last-dir-path="$tmp" $argv
@@ -12,4 +11,3 @@ function lf
 		end
 	end
 end
-''

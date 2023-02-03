@@ -1,7 +1,5 @@
-''
 #!/usr/bin/env fish
 
-function q
+function qq
     exit $argv
 end
-''

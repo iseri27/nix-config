@@ -1,4 +1,3 @@
-''
 #!/usr/bin/env fish
 function r
 	if test $TERM = "dumb"
@@ -19,4 +18,3 @@ function r
 		end
 	end
 end
-''

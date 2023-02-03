@@ -1,4 +1,3 @@
-''
 #!/usr/bin/env fish
 function ranger
 	if test $TERM = "dumb"
@@ -8,6 +7,3 @@ function ranger
 
     command ranger --choosedir=$HOME/.rangerdir; set LASTDIR (cat $HOME/.rangerdir); cd "$LASTDIR" $argv
 end
-
-
-''

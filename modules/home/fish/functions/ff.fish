@@ -1,4 +1,3 @@
-''
 function ff
 	set argc (count $argv)
 	if test $argc = 0
@@ -30,4 +29,3 @@ function ff
 	
 	return
 end
-''
