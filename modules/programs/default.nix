@@ -2,6 +2,6 @@
 {
     imports = [
         ./pigchacli
-        ./fish
+        ./shell
     ];
 }

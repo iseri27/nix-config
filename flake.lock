@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "coronaNur": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1675053971,
-        "narHash": "sha256-Z49ZmQwpAl2cUg656zvn4bDh3h8bvQYpacAwioHJebg=",
-        "owner": "corona09",
-        "repo": "nur-pkgs",
-        "rev": "74b66e26f1d6413437472a9ebccc2501f7367b4d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "corona09",
-        "repo": "nur-pkgs",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -74,7 +54,6 @@
     },
     "root": {
       "inputs": {
-        "coronaNur": "coronaNur",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nur": "nur"

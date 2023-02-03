@@ -2,7 +2,6 @@
 
 {
     environment.systemPackages = with pkgs; [
-        (pkgs.callPackage ../pkgs/dwm/dwm.nix { } )
         (pkgs.callPackage ../pkgs/st { })
         bat
         exa
