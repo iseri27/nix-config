@@ -2,6 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -x EDITOR $(which nvim)
 set -x LANG zh_CN.UTF-8
 set -x GOPATH $HOME/.go
 

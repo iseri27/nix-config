@@ -15,12 +15,12 @@
             modules = [
                 nur.nixosModules.nur
                 ./configuration.nix
-		home-manager.nixosModules.home-manager
-		{
-		    home-manager.useGlobalPkgs = true;
-		    home-manager.useUserPackages = true;
-		    home-manager.users.corona = import ./modules/home;
-		}
+                home-manager.nixosModules.home-manager
+                {
+                    home-manager.useGlobalPkgs = true;
+                    home-manager.useUserPackages = true;
+                    home-manager.users.corona = import ./modules/home;
+                }
             ];
         };
     };

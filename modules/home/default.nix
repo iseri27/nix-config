@@ -3,11 +3,12 @@
     home.stateVersion = "22.11";
     imports = [
         ./user-dirs
-	./git
-	./bash
+        ./git
+        ./bash
         ./fish
-	./starship
-	./ranger
-	./neovim
+        ./starship
+        ./ranger
+        ./neovim
+        ./mpv
     ];
 }
