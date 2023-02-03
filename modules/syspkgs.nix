@@ -21,6 +21,7 @@
         ranger
         openssh
         pkg-config
+        imagemagick
         ueberzug
         lazygit
         starship
