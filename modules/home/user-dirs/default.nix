@@ -1,4 +1,4 @@
 { config, ... }:
 {
-    home.file.".config/user-dirs.dirs".source = ./user-dirs.dirs;
+    home.file.".config/user-dirs.dirs".text = import ./user-dirs.nix;
 }
