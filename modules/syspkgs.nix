@@ -6,6 +6,13 @@
         (pkgs.callPackage ../pkgs/dwm { })
         (pkgs.callPackage ../pkgs/dmenu { })
         (pkgs.callPackage ../pkgs/dwmblocks { })
+        acpi
+        bc
+        picom
+        feh
+        dunst
+        libnotify
+
         bat
         exa
         git
