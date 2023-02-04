@@ -1,0 +1,6 @@
+''
+firefox
+st
+keepassxc
+zotero
+''
