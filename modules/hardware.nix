@@ -1,4 +1,4 @@
-{ config, lib, ...}:
+{ config, lib, pkgs,...}:
 {
     # Legacy:
     # boot.loader.grub = {
@@ -25,4 +25,9 @@
     
     sound.enable = true;
     hardware.pulseaudio.enable = true;
+
+    # environment.systemPackages = with pkgs; [
+    #     broadcom-sta
+    #     broadcom-bt-firmware
+    # ];
 }
