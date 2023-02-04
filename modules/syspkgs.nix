@@ -2,9 +2,10 @@
 
 {
     environment.systemPackages = with pkgs; [
-        (pkgs.callPackage ../pkgs/dwm { })
         (pkgs.callPackage ../pkgs/st { })
-        # dwm
+        (pkgs.callPackage ../pkgs/dwm { })
+        (pkgs.callPackage ../pkgs/dmenu { })
+        (pkgs.callPackage ../pkgs/dwmblocks { })
         bat
         exa
         git
