@@ -6,26 +6,45 @@
     ];
     xdg.portal.enable = true;
     services.flatpak.enable = true;
+    services.gnome.gnome-keyring.enable = true;
+    programs.seahorse.enable = true;
+    qt.platformTheme = "qt5ct";
     environment.systemPackages = with pkgs; [
         (pkgs.callPackage ../pkgs/st { })
         (pkgs.callPackage ../pkgs/dwm { })
         (pkgs.callPackage ../pkgs/dmenu { })
         (pkgs.callPackage ../pkgs/dwmblocks { })
         config.nur.repos.linyinfeng.wemeet
+
         acpi
+        brightnessctl
         bc
         picom
         feh
         dunst
         libnotify
 
+        # libreoffice-qt
+        texlive.combined.scheme-full
+
+        libsForQt5.kate
+        libsForQt5.dolphin
+        libsForQt5.breeze-qt5
+        libsForQt5.breeze-gtk
+        libsForQt5.breeze-icons
+        libsForQt5.plasma-settings
+        qt5ct
+
         bat
+        conky
         exa
         git
         gnumake
         mpd
         mpv
+        fzf
         wget
+        ncdu
         neofetch
         croc
         zip
@@ -45,24 +64,20 @@
         starship
         trash-cli
         keepassxc
-        firefox
+        google-chrome
         zotero
         tdesktop
         nextcloud-client
 
         rnix-lsp
 
-        nodejs yarn
+        nodejs
+        yarn
 
         qemu_full
 
+        xclip
         xorg.xinit
-        xorg.xbacklight
-
-        # Python Packages:
-        python310
-        python310Packages.pip
-        python310Packages.pynvim
-        python310Packages.numpy
     ];
+
 }

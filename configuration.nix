@@ -13,10 +13,12 @@
             experimental-features = nix-command flakes
         '';
     };
+
+    environment.variables = rec {
+        QT_QPA_PLATFORMTHEME = "qt5ct";
+    };
+
     nixpkgs.config.allowUnfree = true;
-    
-    # programs.fish.enable = true;
-    # users.defaultUserShell = pkgs.fish;
     
     nix.settings.substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
 

@@ -8,6 +8,11 @@ fi
 h=`date "+%H"`
 
 if [[ $h -ge 17 ]]; then
-	xbrightness.sh = eDP1 0.3 --temp
+	xbrightness.sh = eDP-1 0.3 --temp
 fi
+
+if [[ -f $HOME/.brightness ]]; then
+    brightnessctl -q s $(cat $HOME/.brightness)
+fi
+
 ''

@@ -8,5 +8,6 @@
         ./syspkgs.nix
         ./users.nix
         ./programs
+        ./python
     ];
 }

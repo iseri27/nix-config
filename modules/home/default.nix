@@ -3,15 +3,16 @@
     home.stateVersion = "22.11";
     imports = [
         ./dwm
+        ./xinit
         ./picom
+        ./conky
         ./dunst
-        ./user-dirs
         ./git
         ./bash
         ./fish
         ./starship
-        ./ranger
         ./neovim
         ./mpv
+        ./ranger
     ];
 }

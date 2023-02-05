@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+rm -f $HOME/.config/user-dirs.dirs 2>/dev/null
 tmpdir=/tmp/nixos-config-sync/
 rm -rf $tmpdir
 mkdir -p $tmpdir

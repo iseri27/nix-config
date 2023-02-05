@@ -5,7 +5,7 @@
     home.file.".config/ranger/plugins".source = ./config/plugins;
     home.file.".config/ranger/commands.py".source = ./config/commands.py;
     home.file.".config/ranger/commands_full.py".source = ./config/commands_full.py;
-    home.file.".config/ranger/rc.conf".source = ./config/rc.conf;
-    home.file.".config/ranger/rfile.conf".source = ./config/rifle.conf;
+    home.file.".config/ranger/rifle.conf".source = ./config/rifle.conf;
     home.file.".config/ranger/scope.sh".source = ./config/scope.sh;
+    home.file.".config/ranger/rc.conf".source = ./config/rc.conf;
 }
