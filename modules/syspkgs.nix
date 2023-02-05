@@ -1,11 +1,17 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nur, ... }:
 
 {
+    xdg.portal.extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+    ];
+    xdg.portal.enable = true;
+    services.flatpak.enable = true;
     environment.systemPackages = with pkgs; [
         (pkgs.callPackage ../pkgs/st { })
         (pkgs.callPackage ../pkgs/dwm { })
         (pkgs.callPackage ../pkgs/dmenu { })
         (pkgs.callPackage ../pkgs/dwmblocks { })
+        config.nur.repos.linyinfeng.wemeet
         acpi
         bc
         picom
@@ -20,12 +26,14 @@
         mpd
         mpv
         wget
+        neofetch
         croc
         zip
         unzip
         p7zip
         unrar
         rar
+        killall
         neovim
         parted
         ranger
