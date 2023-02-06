@@ -4,5 +4,6 @@
         ./pigchacli
         ./shell
         ./editor
+        ./qemu
     ];
 }

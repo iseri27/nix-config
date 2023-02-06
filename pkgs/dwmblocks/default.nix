@@ -13,9 +13,9 @@ stdenv.mkDerivation rec {
     src = fetchFromGitHub({
         owner = "corona09";
         repo = "dwmblocks";
-        rev = "ab1b51e7f1d495da87943e67d325bfe837c0e745";
+        rev = "65c86d816aff18b2b8d2371b68ef5157a9ecf6d5";
         fetchSubmodules = false;
-        sha256 = "sha256-iA6HxjiDUY0N3aHg1l+8zI//hSjJnT5e5hkFXvsGnqQ=";
+        sha256 = "sha256-WwOMumSoj16HVVysvUeZx95jR7L+siRqLTxyKmtRZ9o=";
     });
 
     nativeBuildInputs = [ pkg-config ];

@@ -28,7 +28,7 @@ osd-color='#DDEE00'
 osd-shadow-color='#000099'
 osd-shadow-offset=2
 
-screenshot-directory='~/Pictures/截图/'
+screenshot-directory='~/Pictures/screenshots/'
 screenshot-format='png'
 
 # vim: ft=conf

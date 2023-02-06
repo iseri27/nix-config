@@ -27,8 +27,10 @@
         # libreoffice-qt
         texlive.combined.scheme-full
 
+        lxappearance
         libsForQt5.kate
         libsForQt5.dolphin
+        libsForQt5.ktorrent
         libsForQt5.breeze-qt5
         libsForQt5.breeze-gtk
         libsForQt5.breeze-icons
@@ -54,6 +56,7 @@
         rar
         killall
         neovim
+        neovim-remote
         parted
         ranger
         openssh
@@ -66,8 +69,8 @@
         keepassxc
         google-chrome
         zotero
-        tdesktop
         nextcloud-client
+        zathura
 
         rnix-lsp
 
