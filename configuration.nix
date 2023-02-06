@@ -16,6 +16,7 @@
 
     environment.variables = rec {
         QT_QPA_PLATFORMTHEME = "qt5ct";
+        GTK_USE_PORTAL = "0";
     };
 
     nixpkgs.config.allowUnfree = true;

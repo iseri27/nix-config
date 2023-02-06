@@ -1,11 +1,12 @@
 { config, pkgs, nur, ... }:
 
 {
-    xdg.portal.extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-    ];
-    xdg.portal.enable = true;
-    services.flatpak.enable = true;
+    # xdg.portal.extraPortals = with pkgs; [
+    #     xdg-desktop-portal-gtk
+    # ];
+    # xdg.portal.enable = true;
+    # services.flatpak.enable = true;
+    services.blueman.enable = true;
     services.gnome.gnome-keyring.enable = true;
     programs.seahorse.enable = true;
     qt.platformTheme = "qt5ct";
@@ -41,6 +42,8 @@
         conky
         exa
         git
+        clang
+        gcc
         gnumake
         mpd
         mpv
@@ -72,7 +75,10 @@
         nextcloud-client
         zathura
 
+        tdesktop
+
         rnix-lsp
+        nix-index
 
         nodejs
         yarn

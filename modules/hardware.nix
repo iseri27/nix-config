@@ -25,9 +25,5 @@
     
     sound.enable = true;
     hardware.pulseaudio.enable = true;
-
-    # environment.systemPackages = with pkgs; [
-    #     broadcom-sta
-    #     broadcom-bt-firmware
-    # ];
+    hardware.bluetooth.enable = true;
 }
