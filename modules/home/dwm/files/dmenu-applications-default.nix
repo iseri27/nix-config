@@ -4,8 +4,10 @@ google-chrome-stable
 kate
 keepassxc
 ktorrent
+qq
 qt5ct
 pavucontrol
+todo
 zotero
 zathura
 wemeetapp

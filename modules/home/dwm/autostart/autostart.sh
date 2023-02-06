@@ -2,7 +2,11 @@
 
 # 一次性程序
 
-dwm-wallpaper
+[[ -f $HOME/.fehbg ]] && {
+	$HOME/.fehbg
+} || {
+	dwm-wallpaper random
+}
 
 sh $HOME/.dwm/adjust-temp.sh
 
@@ -12,6 +16,7 @@ picom &
 
 dunst &
 
+ps -ef | grep "/usr/bin/kwalletd5" | grep -v grep | awk '{print $2}' | xargs kill 2>/dev/null
 nm-applet &
 
 conky &
@@ -19,6 +24,8 @@ conky &
 fcitx5 &
 
 ps -ef | grep "dwmblocks" | grep -v grep | awk '{print $2}' | xargs kill 2>/dev/null
-dwmblocks > $HOME/.dwmblocks.log 2>&1 &
+dwmblocks 2>>$HOME/.dwmblocks.log &
 
 nextcloud &
+
+blueman-applet &

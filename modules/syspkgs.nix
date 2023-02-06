@@ -1,11 +1,11 @@
 { config, pkgs, nur, ... }:
 
 {
-    # xdg.portal.extraPortals = with pkgs; [
-    #     xdg-desktop-portal-gtk
-    # ];
-    # xdg.portal.enable = true;
-    # services.flatpak.enable = true;
+    xdg.portal.extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+    ];
+    xdg.portal.enable = true;
+    services.flatpak.enable = true;
     services.blueman.enable = true;
     services.gnome.gnome-keyring.enable = true;
     programs.seahorse.enable = true;
@@ -15,6 +15,9 @@
         (pkgs.callPackage ../pkgs/dwm { })
         (pkgs.callPackage ../pkgs/dmenu { })
         (pkgs.callPackage ../pkgs/dwmblocks { })
+        (pkgs.callPackage ../pkgs/qq { })
+        (pkgs.callPackage ../pkgs/cfft { })
+        (pkgs.callPackage ../pkgs/todo { })
         config.nur.repos.linyinfeng.wemeet
 
         acpi
@@ -22,10 +25,12 @@
         bc
         picom
         feh
+        ffmpeg
+        ffmpegthumbnailer
         dunst
         libnotify
+        libime
 
-        # libreoffice-qt
         texlive.combined.scheme-full
 
         lxappearance
@@ -43,6 +48,7 @@
         exa
         git
         clang
+        clang-tools
         gcc
         gnumake
         mpd
@@ -69,6 +75,7 @@
         lazygit
         starship
         trash-cli
+        tree
         keepassxc
         google-chrome
         zotero
@@ -78,7 +85,6 @@
         tdesktop
 
         rnix-lsp
-        nix-index
 
         nodejs
         yarn
