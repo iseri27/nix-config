@@ -1,9 +1,10 @@
 { ... }:
 {
     imports = [
-        ./pigchacli
-        ./shell
         ./editor
+        ./desktop
+        ./pigchacli
         ./qemu
+        ./shell
     ];
 }

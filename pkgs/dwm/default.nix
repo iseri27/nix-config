@@ -15,9 +15,9 @@ stdenv.mkDerivation rec {
     src = fetchFromGitHub ({
         owner = "corona09";
         repo = "dwm";
-        rev = "380f2c2b0e19a36d2cb6ab04f300d91ee8865cbb";
+        rev = "96b888a2ab6894e96edb85e01edb666ad139573f";
         fetchSubmodules = false;
-        sha256 = "sha256-2yZOnSr9aeHdPWmeReEQyOBZM93Vg3LHgn0re00iQbM=";
+        sha256 = "sha256-1GJN8I9IGOM4vALhaWb7UO8JILb91vZNNewIGc/3dhI=";
     });
 
     buildInputs = [

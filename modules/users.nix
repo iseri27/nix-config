@@ -6,9 +6,5 @@
         isNormalUser = true;
         home = "/home/corona";
         extraGroups = [ "wheel" "video" ];
-        packages = with pkgs; [
-            vlc plank cantata
-            whitesur-gtk-theme whitesur-icon-theme
-        ];
     };
 }

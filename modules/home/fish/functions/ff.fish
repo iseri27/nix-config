@@ -6,7 +6,7 @@ function ff
 		set path $argv[1]
 	end
 
-	set f (find $path ! -path "**/.*" ! -path "**/.git*" ! -path "**/.w3m*" ! -path "**/.swt*" ! -path "**/node_modules*" | fzf --preview-window='up' --preview '/home/corona/Documents/applications/scripts/fzf/preview.sh {}')
+	set f (find $path ! -path "**/.*" ! -path "**/.git*" ! -path "**/.w3m*" ! -path "**/.swt*" ! -path "**/node_modules*" | fzf --preview-window='up' --preview "$HOME/.scripts/preview.sh {}")
 
 	set f (string trim $f)
 
@@ -14,7 +14,7 @@ function ff
 		return
 	end
 
-	set t (/home/corona/Documents/applications/scripts/fzf/judge_type.sh $f)
+	set t ($HOME/.scripts/judge_type.sh $f)
 
 	if test "$t" = "text"
 		cd (dirname $f)

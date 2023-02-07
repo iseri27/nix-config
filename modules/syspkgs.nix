@@ -1,98 +1,55 @@
 { config, pkgs, nur, ... }:
 
 {
+    # 启用 flatpak
     xdg.portal.extraPortals = with pkgs; [
         xdg-desktop-portal-gtk
     ];
     xdg.portal.enable = true;
     services.flatpak.enable = true;
+    # 蓝牙
     services.blueman.enable = true;
+    # 密钥存储
     services.gnome.gnome-keyring.enable = true;
     programs.seahorse.enable = true;
+    # qt 主题
     qt.platformTheme = "qt5ct";
+
     environment.systemPackages = with pkgs; [
-        (pkgs.callPackage ../pkgs/st { })
-        (pkgs.callPackage ../pkgs/dwm { })
-        (pkgs.callPackage ../pkgs/dmenu { })
+        # 自定义软件包
+        (pkgs.callPackage ../pkgs/cfft      { })
+        (pkgs.callPackage ../pkgs/dmenu     { })
+        (pkgs.callPackage ../pkgs/dwm       { })
         (pkgs.callPackage ../pkgs/dwmblocks { })
-        (pkgs.callPackage ../pkgs/qq { })
-        (pkgs.callPackage ../pkgs/cfft { })
-        (pkgs.callPackage ../pkgs/todo { })
+        (pkgs.callPackage ../pkgs/qq        { })
+        (pkgs.callPackage ../pkgs/st        { })
+        (pkgs.callPackage ../pkgs/todo      { })
         config.nur.repos.linyinfeng.wemeet
+        config.nur.repos.xddxdd.baidupcs-go
 
+        # Basic Packages:
         acpi
-        brightnessctl
-        bc
-        picom
-        feh
-        ffmpeg
-        ffmpegthumbnailer
+        bat bc brightnessctl
+        clang clang-tools conky croc
         dunst
-        libnotify
-        libime
-
-        texlive.combined.scheme-full
-
-        lxappearance
-        libsForQt5.kate
-        libsForQt5.dolphin
-        libsForQt5.ktorrent
-        libsForQt5.breeze-qt5
-        libsForQt5.breeze-gtk
-        libsForQt5.breeze-icons
-        libsForQt5.plasma-settings
-        qt5ct
-
-        bat
-        conky
         exa
-        git
-        clang
-        clang-tools
-        gcc
-        gnumake
-        mpd
-        mpv
-        fzf
-        wget
-        ncdu
-        neofetch
-        croc
-        zip
-        unzip
-        p7zip
-        unrar
-        rar
-        killall
-        neovim
-        neovim-remote
-        parted
-        ranger
-        openssh
-        pkg-config
+        feh ffmpeg ffmpegthumbnailer file fzf
+        gcc git gnumake
         imagemagick
-        ueberzug
-        lazygit
-        starship
-        trash-cli
-        tree
-        keepassxc
-        google-chrome
-        zotero
-        nextcloud-client
-        zathura
-
-        tdesktop
-
-        rnix-lsp
-
-        nodejs
+        killall
+        lazygit libime libnotify lxappearance
+        mpd mpv
+        ncdu neofetch neovim neovim-remote nodejs
+        openssh
+        p7zip parted picom pkg-config
+        qt5ct
+        ranger rar rnix-lsp starship
+        surf
+        texlive.combined.scheme-full trash-cli tree
+        ueberzug unrar unzip
+        wget
+        xclip xorg.xinit
         yarn
-
-        qemu_full
-
-        xclip
-        xorg.xinit
+        zathura zip
     ];
-
 }

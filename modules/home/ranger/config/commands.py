@@ -111,7 +111,7 @@ class fzf_select(Command):
             FPATH = self.arg(1)
 
         command = "find -L " + FPATH + " \(  -path '*/\.git*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
-        -o -print 2> /dev/null | sed 1d | fzf +m --preview-window='up' --preview '$HOME/Documents/applications/scripts/fzf/preview.sh {}'"
+        -o -print 2> /dev/null | sed 1d | fzf +m --preview-window='up' --preview '$HOME/.scripts/preview.sh {}'"
 
         fzf = self.fm.execute_command(command,
                                       universal_newlines=True,

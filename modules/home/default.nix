@@ -2,19 +2,20 @@
     programs.home-manager.enable = true;
     home.stateVersion = "22.11";
     imports = [
-        ./dwm
-        ./kde
-        ./xinit
-        ./picom
+        ./bash
         ./conky
         ./dunst
-        ./git
-        ./bash
+        ./dwm
         ./fish
-        ./starship
-        ./neovim
+        ./git
+        ./kde
         ./mpv
+        ./neovim
+        ./picom
         ./ranger
+        ./scripts
+        ./starship
+        ./xinit
         ./zathura
     ];
 }
