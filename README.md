@@ -29,13 +29,14 @@ sudo nixos-install --root /mnt
 该配置尚不完善, 在安装完成之后, 还有部分内容需要手动配置:
 
 - 设置 wifi
+- fcitx5 启用拼音, 设置 theme, 字体, 快捷键
 - chrome 账号登录, 同步浏览器数据
-- 拷贝 `~/.config/user-dirs.dirs`
-- zotero 安装插件, 启用同步, 更改目录
 - qt5ct 设置 theme
 - lxappearance 设置 gtk 主题
+- 拷贝 `~/.config/user-dirs.dirs`
+- zotero 安装插件, 启用同步, 更改目录
 - 登录 nextcloud, 启用虚拟存储, 更新忽略列表
-- fcitx5 设置 theme, 字体, 快捷键
 - 安装中华书局宋体, 该字体必须登录才能下载, 将其放到 `~/.local/share/fonts` 目录下
-- 需要手动下载 libreoffice, 设置 libreoffice 背景与 icon 主题: `nix-env -iA nixos.libreoffice-still`
+- 需要手动下载 libreoffice: `nix-env -iA nixos.libreoffice-still`, 并设置 libreoffice 背景与 icon 主题
 - 设置 konsole 主题配色
+- 运行 `nix-index --show-trace` 生成软件包索引 (需要等待时间较长)

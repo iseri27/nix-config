@@ -7,7 +7,6 @@ let
 in
 {
     environment.systemPackages = [
-        pkgs.python3
         (pkgs.python3.withPackages pythonPackages)
     ];
 }
