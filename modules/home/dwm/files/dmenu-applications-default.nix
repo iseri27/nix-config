@@ -1,4 +1,5 @@
 ''
+ark
 dolphin
 google-chrome-stable
 gwenview
@@ -10,6 +11,7 @@ okular
 pavucontrol
 qq
 qt5ct
+telegram-desktop
 todo
 wemeetapp
 zathura

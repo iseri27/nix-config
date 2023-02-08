@@ -8,6 +8,7 @@
         ./dwm
         ./fish
         ./git
+        ./gtk
         ./kde
         ./mpv
         ./neovim

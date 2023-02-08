@@ -28,27 +28,29 @@
         config.nur.repos.xddxdd.baidupcs-go
 
         # Basic Packages:
-        acpi
+        acpi atool
         bat bc brightnessctl
-        clang clang-tools conky croc
+        catdoc clang clang-tools conky croc ctags
         dunst
         exa
         feh ffmpeg ffmpegthumbnailer file fzf
         gcc git gnumake
         imagemagick
+        jq
         killall
-        lazygit libime libnotify lxappearance
-        mpd mpv
+        lazygit libarchive libime libnotify librsvg
+        # lxappearance
+        mediainfo mpd mpv
         ncdu neofetch neovim neovim-remote nodejs
-        openssh
-        p7zip parted picom pkg-config
+        odt2txt openssh
+        pandoc p7zip parted picom pkg-config poppler_utils
         qt5ct
         ranger rar rnix-lsp starship
         surf
         texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
-        wget
-        xclip xorg.xinit
+        w3m wget
+        xclip xlsx2csv xorg.xinit
         yarn
         zathura zip
     ];
