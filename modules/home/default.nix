@@ -16,6 +16,7 @@
         ./ranger
         ./scripts
         ./starship
+        ./templates
         ./xinit
         ./zathura
     ];

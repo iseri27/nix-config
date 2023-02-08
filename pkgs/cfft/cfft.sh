@@ -46,12 +46,21 @@ src="$template_dir/${file_list[$chosen]}"
 target="./${file_list[$chosen]}"
 
 if [[ -f "$src" ]]; then
+	# 只是单个文件
     cp "$src" "$target"
+	chmod 644 "$target"
 elif [[ -d "$src" ]]; then
     cp -r "$src" "$target"
-	if [[ -f "$src/.gitignore" ]]; then
-		cp -f "$src/.gitignore" "$target/.gitignore"
+	if [[ -f "$src/.gitignore" ]] && ! [[ -f "$target/.gitignore" ]]; then
+		cp "$src/.gitignore" "$target/.gitignore" 2>/dev/null
 	fi
+	cd "$target"
+	for d in `find . -type d`; do
+		chmod -R 755 $d
+	done
+	for f in `find . -type f`; do
+		chmod 644 $f
+	done
 else
 	echo "Error!"
 fi    

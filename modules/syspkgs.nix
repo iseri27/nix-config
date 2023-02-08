@@ -24,6 +24,7 @@
         (pkgs.callPackage ../pkgs/qq        { })
         (pkgs.callPackage ../pkgs/st        { })
         (pkgs.callPackage ../pkgs/todo      { })
+        (pkgs.callPackage ../pkgs/gbkunzip  { })
         config.nur.repos.linyinfeng.wemeet
         config.nur.repos.xddxdd.baidupcs-go
 
@@ -34,12 +35,11 @@
         dunst
         exa
         feh ffmpeg ffmpegthumbnailer file fzf
-        gcc git gnumake
+        gcc git gnumake gnome-epub-thumbnailer
         imagemagick
         jq
         killall
         lazygit libarchive libime libnotify librsvg
-        # lxappearance
         mediainfo mpd mpv
         ncdu neofetch neovim neovim-remote nodejs
         odt2txt openssh

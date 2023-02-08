@@ -28,6 +28,8 @@ sudo nixos-install --root /mnt
 
 该配置尚不完善, 在安装完成之后, 还有部分内容需要手动配置:
 
+- 生成 ssh-key
+- 配置 picgo (勿将包含密钥的 picgo 配置文件上传到 git)
 - fcitx5 启用拼音, 设置 theme, 字体, 快捷键
 - qt5ct 设置 theme
 - 拷贝 `~/.config/user-dirs.dirs`

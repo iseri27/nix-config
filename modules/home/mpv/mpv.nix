@@ -6,7 +6,7 @@ keep-open=yes
 profile=gpu-hq
 vo=gpu
 hwdec=vaapi
-gpu-hwdec-interop=vaapi-egl
+gpu-hwdec-interop=vaapi
 
 audio-device='pulse'
 volume-max=300
