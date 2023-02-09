@@ -286,7 +286,7 @@ def get_decompression_command(
             return command
 
     elif search(r"\.zip$", archive_name) is not None:
-        bins = ["7z", "unzip"]
+        bins = ["unzip", "7z"]
         binary, binary_path = find_binaries(bins)
 
         if binary == 'unzip':

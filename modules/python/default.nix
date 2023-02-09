@@ -7,6 +7,7 @@ let
 in
 {
     environment.systemPackages = [
+        pkgs.virtualenv
         (pkgs.python3.withPackages pythonPackages)
     ];
 }

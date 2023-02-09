@@ -3,6 +3,8 @@
     environment.systemPackages = with pkgs; [
         pkgs.nur-corona.pigchacli
     ];
+    networking.proxy.default = "http://127.0.0.1:15777/";
+    networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
     systemd.services.pigchacli = {
         enable = true;
         description = "Pigchacli Service";

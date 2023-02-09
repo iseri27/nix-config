@@ -30,7 +30,7 @@
         nur-corona.gbkunzip
 
         # Basic Packages:
-        acpi atool
+        acpi aria atool
         bat bc brightnessctl
         catdoc clang clang-tools conky croc ctags
         dunst
@@ -50,6 +50,7 @@
         surf
         texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
+        vscode-fhs
         w3m wget
         xclip xlsx2csv xorg.xinit
         yarn
