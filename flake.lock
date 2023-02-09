@@ -8,11 +8,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1675303228,
-        "narHash": "sha256-dHJbFg7gTuTyEUdJoNDp6l2bac6HXAT/bz9cVEqL+Uw=",
+        "lastModified": 1675935446,
+        "narHash": "sha256-WajulTn7QdwC7QuXRBavrANuIXE5z+08EdxdRw1qsNs=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "4a958524903e6019f5f69a23e0c0f16e5af01eb0",
+        "rev": "2dce7f1a55e785a22d61668516df62899278c9e4",
         "type": "github"
       },
       "original": {
@@ -23,11 +23,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1674641431,
-        "narHash": "sha256-qfo19qVZBP4qn5M5gXc/h1MDgAtPA5VxJm9s8RUAkVk=",
+        "lastModified": 1675763311,
+        "narHash": "sha256-bz0Q2H3mxsF1CUfk26Sl9Uzi8/HFjGFD/moZHz1HebU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9b97ad7b4330aacda9b2343396eb3df8a853b4fc",
+        "rev": "fab09085df1b60d6a0870c8a89ce26d5a4a708c2",
         "type": "github"
       },
       "original": {
@@ -39,11 +39,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1675051869,
-        "narHash": "sha256-Ajz+dFKeZFdCzYjfUZt1zJvMHbZGi8GkzX4gDR3j7ok=",
+        "lastModified": 1675935906,
+        "narHash": "sha256-nTH/kVk54rENPqvOFunJTgBqpLy461AcRVb7NTn7ktM=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "7bfc5c30aa9578174d6db70f68f23a2f33bc3c11",
+        "rev": "33a469274f2143810ce17701dc205978ff706d1d",
         "type": "github"
       },
       "original": {
@@ -52,11 +52,32 @@
         "type": "github"
       }
     },
+    "nur-corona": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1675944469,
+        "narHash": "sha256-C2py3N6TXVSToZ5/0BJrqqacb5gvjUf1nVjzS9FPLCw=",
+        "owner": "corona09",
+        "repo": "nur-pkgs",
+        "rev": "fd5d122654e184340646314306dafe3e5257afb9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "corona09",
+        "repo": "nur-pkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "nur": "nur"
+        "nur": "nur",
+        "nur-corona": "nur-corona"
       }
     },
     "utils": {

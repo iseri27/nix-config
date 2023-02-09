@@ -10,7 +10,7 @@ function r
 
 	if test -f "$tmp"
 		set dir (cat $tmp)
-		rm -f "$tmp"
+		command rm -f "$tmp"
 		if test -d "$dir"
 			if test "$dir" != (pwd)
 				cd $dir

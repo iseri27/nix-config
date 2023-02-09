@@ -17,16 +17,17 @@
 
     environment.systemPackages = with pkgs; [
         # 自定义软件包
-        (pkgs.callPackage ../pkgs/cfft      { })
-        (pkgs.callPackage ../pkgs/dmenu     { })
-        (pkgs.callPackage ../pkgs/dwm       { })
-        (pkgs.callPackage ../pkgs/dwmblocks { })
-        (pkgs.callPackage ../pkgs/qq        { })
-        (pkgs.callPackage ../pkgs/st        { })
-        (pkgs.callPackage ../pkgs/todo      { })
-        (pkgs.callPackage ../pkgs/gbkunzip  { })
         config.nur.repos.linyinfeng.wemeet
         config.nur.repos.xddxdd.baidupcs-go
+
+        nur-corona.cfft
+        nur-corona.dwm
+        nur-corona.dmenu
+        nur-corona.dwmblocks
+        nur-corona.qq
+        nur-corona.st
+        nur-corona.todo
+        nur-corona.gbkunzip
 
         # Basic Packages:
         acpi atool
