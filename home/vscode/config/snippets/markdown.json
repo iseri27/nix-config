@@ -1,0 +1,80 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Insert an Image": {
+		"prefix": "image",
+		"body": [
+            "<center>",
+            "    <img src=\"$1\" style=\"zoom:$2\" />",
+            "</center>"
+		],
+		"description": "Insert an Image"
+	},
+	"Section": {
+		"prefix": "sec",
+		"body": [
+			"# $0"
+		],
+		"description": "Section"
+	},
+	"Sub Section": {
+		"prefix": "sub",
+		"body": "## $0",
+		"description": "Sub Section"
+	},
+	"Sub Sub Section": {
+		"prefix": "ssub",
+		"body": "### $0",
+		"description": "Sub Sub Section"
+	},
+	"Paragraph": {
+		"prefix": "par",
+		"body": "#### $0",
+		"description": "Paragraph"
+	},
+	"Sub Paragraph": {
+		"prefix": "spar",
+		"body": "##### $0",
+		"description": "Sub Paragraph"
+	},
+	"Sub Sub Paragraph": {
+		"prefix": "sspar",
+		"body": "###### $0",
+		"description": "Sub Sub Paragraph"
+	},
+	"Bold Text": {
+		"prefix": "bd",
+		"body": "<b>$1</b>$0",
+		"description": "HTML Style Bold Text"
+	},
+	"Italic Text": {
+		"prefix": "it",
+		"body": "<i>$1</i>$0",
+		"description": "HTML Style Italic Text"
+	},
+	"Underlined Text": {
+		"prefix": "un",
+		"body": "<u>$1</u>$0",
+		"description": "HTML Style Underlined Text"
+	},
+	"Delete Line Text": {
+		"prefix": "dl",
+		"body": "<s>$1</s>$0",
+		"description": "HTML Style Delete Line Text"
+	},
+	"Caption for Image": {
+		"prefix": "caption",
+		"body": "<center><p> $1 </p></center>$0"
+	}
+}

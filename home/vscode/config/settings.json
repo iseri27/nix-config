@@ -1,0 +1,190 @@
+{
+    "window.titleBarStyle": "native",
+    "editor.fontSize": 17,
+    "editor.fontFamily": "'FiraCode Nerd Font', 'DejaVu Sans Mono Nerd Font', 'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.mouseWheelZoom": true,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.editor.enablePreview": false,
+
+    // C 语言风格设置大括号不换行
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Chromium, IndentWidth: 4 }",
+
+    // Markdown设置
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.autoClosingBrackets":"never", // 不自动补全括号
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggest.showSnippets": true
+    },
+
+    // LaTex设置
+    "[latex]": {
+        "editor.formatOnSave": false,
+        "editor.wordWrap": "on"
+    },
+
+    "latex-workshop.showContextMenu":true,                //右键菜单
+    "latex-workshop.intellisense.package.enabled": true,  //根据加载的包，自动完成命令或包  
+    "latex-workshop.latex.autoBuild.run": "never", 
+    "latex-workshop.latex.tools": [
+        {
+            // 编译工具和命令
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdf->bib->pdf->pdf",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "security.workspace.trust.enabled": false,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "files.associations": {
+        "*.h": "c"
+    },
+    "code-runner.executorMap": {
+
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName",
+        "vala": "cd $dir && valac $fileName -X -lm -X -w -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+    "picgo.configPath": "/home/corona/.picgo/config.json",
+    "picgo.customOutputFormat": "<center><img src=\"https://${url}\" alt=\"${uploadedName}\" width=\"100%\"/> </center>",
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "picgo.dataPath": "/home/corona/.vs-picgo-data.json",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "background.style": {
+
+
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "100%",
+        "height": "100%",
+        "background-position": "100% 100%",
+        "background-repeat": "no-repeat",
+        "opacity": 0.1
+    },
+    "cnblogsClientForVSCode.macos.chromiumPath": "",
+    "cnblogsClientForVSCode.workspace": "/home/corona/Documents/cnblogs",
+    "cnblogsClientForVSCode.windows.chromiumPath": "",
+}

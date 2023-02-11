@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# 对当前配置进行备份
+time=$(date "+%Y-%m-%d_%H-%M-%S")
+backupdir="$HOME/.nixos-config-backup/$time"
+rm -rf "$backupdir"
+mkdir -p "$backupdir"
+cp -r /etc/nixos/* $backupdir/
+
 rm -f $HOME/.config/user-dirs.dirs 2>/dev/null
 tmpdir=/tmp/nixos-config-sync/
 rm -rf $tmpdir

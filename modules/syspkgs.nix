@@ -42,12 +42,12 @@
         killall
         lazygit libarchive libime libnotify librsvg
         mediainfo mpd mpv
-        ncdu neofetch neovim neovim-remote nodejs
+        ncdu neofetch neovim neovim-remote nodejs nodePackages.bash-language-server
         odt2txt openssh
         pandoc p7zip parted picom pkg-config poppler_utils
         qt5ct
         ranger rar rnix-lsp starship
-        surf
+        surf sxhkd
         texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
         vscode-fhs

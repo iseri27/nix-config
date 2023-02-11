@@ -26,6 +26,8 @@ fcitx5 &
 ps -ef | grep "dwmblocks" | grep -v grep | awk '{print $2}' | xargs kill 2>/dev/null
 dwmblocks 2>>$HOME/.dwmblocks.log &
 
+sxhkd -c $HOME/.config/sxhkd/sxhkdrc-dwm &
+
 nextcloud &
 
 blueman-applet &
