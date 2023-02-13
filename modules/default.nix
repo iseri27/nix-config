@@ -7,6 +7,7 @@
         ./hardware.nix
         ./syspkgs.nix
         ./users.nix
+        ./gnome
         ./programs
         ./python
     ];

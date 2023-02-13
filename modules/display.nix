@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 {
     console = {
         font = "Lat2-Terminus16";
@@ -7,8 +7,8 @@
     
     services.xserver.enable = true;
     services.xserver.layout = "us";
-    services.xserver.displayManager.startx.enable = true;
-    services.xserver.desktopManager.xfce.enable = true;
+    services.xserver.windowManager.dwm.package = pkgs.nur-corona.dwm;
+    services.xserver.windowManager.dwm.enable = true;
     services.xserver.xkbOptions = "ctrl:swapcaps";
     services.xserver.libinput.enable = true;
 }

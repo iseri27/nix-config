@@ -2,9 +2,9 @@
 
 {
     # 启用 flatpak
-    xdg.portal.extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-    ];
+    # xdg.portal.extraPortals = with pkgs; [
+    #     xdg-desktop-portal-gtk
+    # ];
     xdg.portal.enable = true;
     services.flatpak.enable = true;
     # 蓝牙
@@ -42,7 +42,7 @@
         killall
         lazygit libarchive libime libnotify librsvg
         mediainfo mpd mpv
-        ncdu neofetch neovim neovim-remote nodejs nodePackages.bash-language-server
+        ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
         odt2txt openssh
         pandoc p7zip parted picom pkg-config poppler_utils
         qt5ct

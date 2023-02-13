@@ -7,4 +7,5 @@
         home = "/home/corona";
         extraGroups = [ "wheel" "video" ];
     };
+
 }

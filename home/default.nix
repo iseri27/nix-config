@@ -5,6 +5,7 @@
         ./bash
         ./conky
         ./dunst
+        ./dconf
         ./dwm
         ./fish
         ./git
@@ -18,6 +19,7 @@
         ./starship
         ./sxhkd
         ./templates
+        ./user-dirs
         ./vscode
         ./xinit
         ./zathura

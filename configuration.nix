@@ -19,6 +19,10 @@
         GTK_USE_PORTAL = "0";
     };
 
+    environment.etc."xdg/user-dirs.conf".text = ''
+        enabled=False
+        '';
+
     nixpkgs.config.allowUnfree = true;
     
     nix.settings.substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
