@@ -15,6 +15,15 @@
     # qt 主题
     qt.platformTheme = "qt5ct";
 
+    # 网络设置
+    networking.hostName = "nixos";
+    networking.networkmanager.enable = true;
+    
+    # 声音与蓝牙设置
+    sound.enable = true;
+    hardware.pulseaudio.enable = true;
+    hardware.bluetooth.enable = true;
+
     environment.systemPackages = with pkgs; [
         # 自定义软件包
         config.nur.repos.linyinfeng.wemeet

@@ -29,10 +29,10 @@
                 {
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
-                    home-manager.users.corona = import ./home;
-                    home-manager.users.root = import ./home;
+                    home-manager.users.corona = import ./modules/home;
+                    home-manager.users.root = import ./modules/home;
                 }
-                ./configuration.nix
+                ./environment.nix
             ];
         };
     };

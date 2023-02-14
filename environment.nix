@@ -3,7 +3,7 @@
 {
     imports =
         [
-          ./hardware-configuration.nix
+          ./hardware
           ./modules
         ];
     
@@ -23,8 +23,10 @@
         enabled=False
         '';
 
+    environment.localBinInPath = true;
+
     nixpkgs.config.allowUnfree = true;
-    
+
     nix.settings.substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
 
     system.stateVersion = "22.11";
