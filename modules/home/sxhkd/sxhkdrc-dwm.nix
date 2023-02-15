@@ -75,9 +75,7 @@ alt + shift + q
 alt + c
 	google-chrome-stable
 alt + e
-	dolphin
-alt + shift + e
-	thunar
+	nautilus
 ctrl + alt + t
 	konsole
 alt + p

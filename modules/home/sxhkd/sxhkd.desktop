@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=sxhkd
+Exec=sxhkd -c ~/.config/sxhkd/sxhkdrc-gnome
+Hidden=true
+OnlyShowIn=GNOME

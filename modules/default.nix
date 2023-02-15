@@ -4,6 +4,7 @@
         ./boot
         ./fonts
         ./locale
+        ./desktop
         ./display
         ./syspkgs
         ./users

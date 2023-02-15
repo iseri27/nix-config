@@ -33,10 +33,10 @@
         nur-corona.dwm
         nur-corona.dmenu
         nur-corona.dwmblocks
+        nur-corona.gbkunzip
         nur-corona.qq
         nur-corona.st
         nur-corona.todo
-        nur-corona.gbkunzip
 
         # Basic Packages:
         acpi aria atool
@@ -54,9 +54,9 @@
         ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
         odt2txt openssh
         pandoc p7zip parted picom pkg-config poppler_utils
-        qt5ct
+        qt5ct qutebrowser
         ranger rar rnix-lsp starship
-        surf sxhkd
+        sxhkd
         texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
         vscode-fhs
