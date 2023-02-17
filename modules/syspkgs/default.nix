@@ -7,8 +7,8 @@
     # ];
     xdg.portal.enable = true;
     services.flatpak.enable = true;
-    # 蓝牙
-    services.blueman.enable = true;
+    # 蓝牙 blueman
+    # services.blueman.enable = true;
     # 密钥存储
     services.gnome.gnome-keyring.enable = true;
     programs.seahorse.enable = true;

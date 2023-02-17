@@ -23,6 +23,10 @@ with lib.hm.gvariant;
       window-width = 696;
     };
 
+    "org/blueman/general" = {
+      window-properties = [ 614 473 0 0 ];
+    };
+
     "org/blueman/plugins/powermanager" = {
       auto-power-on = "@mb true";
     };
@@ -131,7 +135,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/peripherals/mouse" = {
-      speed = 1.0;
+      natural-scroll = false;
+      speed = 6.140350877192979e-2;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
@@ -155,6 +160,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/session" = {
       idle-delay = mkUint32 300;
+    };
+
+    "org/gnome/desktop/wm/keybindings" = {
+      close = [ "<Alt>q" ];
     };
 
     "org/gnome/desktop/wm/preferences" = {
@@ -216,6 +225,36 @@ with lib.hm.gvariant;
       night-light-enabled = true;
     };
 
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" ];
+      help = [];
+      www = [ "<Alt>c" ];
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      binding = "<Alt>e";
+      command = "nautilus";
+      name = "文件管理器";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      binding = "<Alt>Return";
+      command = "st";
+      name = "启动终端";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      binding = "<Alt>z";
+      command = "zotero";
+      name = "zotero";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+      binding = "<Alt>p";
+      command = "keepassxc";
+      name = "keepassxc";
+    };
+
     "org/gnome/shell" = {
       app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'com.nextcloud.desktopclient.nextcloud.desktop': <{'position': <9>}>, 'org.kde.okular.desktop': <{'position': <10>}>, 'gnome-system-monitor.desktop': <{'position': <11>}>, 'org.qutebrowser.qutebrowser.desktop': <{'position': <12>}>, 'org.telegram.desktop.desktop': <{'position': <13>}>, 'code.desktop': <{'position': <14>}>}]";
       disable-user-extensions = false;
@@ -230,8 +269,22 @@ with lib.hm.gvariant;
       current-workspace-only = false;
     };
 
+    "org/gnome/shell/extensions/bluetooth-quick-connect" = {
+      bluetooth-auto-power-on = true;
+      debug-mode-on = true;
+      keep-menu-on-toggle = true;
+      refresh-button-on = true;
+      show-battery-value-on = true;
+    };
+
     "org/gnome/shell/extensions/caffeine" = {
       indicator-position-max = 1;
+    };
+
+    "org/gnome/shell/extensions/extension-list" = {
+      button-icon = mkUint32 0;
+      hide-disabled = true;
+      toggle-unpin = false;
     };
 
     "org/gnome/shell/extensions/just-perfection" = {

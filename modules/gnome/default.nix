@@ -13,13 +13,15 @@
         nur-corona.gnome-extension-input-method-panel
     ] ++ (with gnomeExtensions; [
         appindicator
-        bluetooth-quick-connect
         blur-my-shell
         caffeine
+        command-menu
         dash-to-dock
+        extension-list
         fuzzy-app-search
         just-perfection
         proxy-switcher
+        removable-drive-menu
         replace-activities-text
         user-themes
     ]);
@@ -34,9 +36,12 @@
         eog epiphany evince
         file-roller
         geary gedit
-        gnome-shell-extensions # 这个包是若干个扩展的集合，而不是 gnome 扩展本身
+
+        # gnome-shell-extensions 这个包是若干个扩展的集合，而不是 gnome 扩展本身
         gnome-calculator gnome-characters gnome-clocks gnome-contacts gnome-disk-utility 
-        gnome-font-viewer gnome-maps gnome-music gnome-software gnome-terminal gnome-weather
+        gnome-font-viewer gnome-maps gnome-music gnome-shell-extensions gnome-software
+        gnome-system-monitor gnome-terminal gnome-weather
+
         hitori
         iagno
         simple-scan
