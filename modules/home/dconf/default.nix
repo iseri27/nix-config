@@ -35,11 +35,6 @@ with lib.hm.gvariant;
       recent-connections = "[{'adapter': '94:F6:D6:24:9E:13', 'address': '12:34:C0:0E:9E:33', 'alias': 'MI Mouse BT3.0', 'icon': 'input-mouse', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1675663655.9366188'}]";
     };
 
-    "org/gnome/control-center" = {
-      last-panel = "mouse";
-      window-state = mkTuple [ 980 640 ];
-    };
-
     "org/gnome/desktop/app-folders" = {
       folder-children = [ "Utilities" "YaST" "6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" "b7953d8a-9aa5-43fd-ac24-b7228a5df778" "03ce591a-01dc-4a68-8cce-a1fd8633cc9a" ];
     };
@@ -73,15 +68,6 @@ with lib.hm.gvariant;
     "org/gnome/desktop/app-folders/folders/b7953d8a-9aa5-43fd-ac24-b7228a5df778" = {
       apps = [ "impress.desktop" "draw.desktop" "calc.desktop" "math.desktop" "writer.desktop" "base.desktop" "startcenter.desktop" "wemeetapp-force-x11.desktop" "wemeetapp.desktop" ];
       name = "办公";
-    };
-
-    "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///home/corona/.local/share/backgrounds/2023-02-15-08-23-58-%E9%87%8D%E8%BF%94%E6%9C%AA%E6%9D%A51999-%E5%8F%B8%E6%8E%8C%E6%97%B6%E9%97%B4%E4%B9%8B%E4%BA%BA.jpg";
-      picture-uri-dark = "file:///home/corona/.local/share/backgrounds/2023-02-15-08-23-58-%E9%87%8D%E8%BF%94%E6%9C%AA%E6%9D%A51999-%E5%8F%B8%E6%8E%8C%E6%97%B6%E9%97%B4%E4%B9%8B%E4%BA%BA.jpg";
-      primary-color = "#000000000000";
-      secondary-color = "#000000000000";
     };
 
     "org/gnome/desktop/input-sources" = {
@@ -134,24 +120,20 @@ with lib.hm.gvariant;
       application-id = "org.telegram.desktop.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/qq" = {
+      application-id = "qq.desktop";
+    };
+
     "org/gnome/desktop/peripherals/mouse" = {
       natural-scroll = false;
-      speed = 6.140350877192979e-2;
+      speed = 6.1404e-2;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
-      natural-scroll = true;
+      natural-scroll = false;
       send-events = "enabled";
       tap-to-click = true;
       two-finger-scrolling-enabled = true;
-    };
-
-    "org/gnome/desktop/screensaver" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///home/corona/.local/share/backgrounds/2023-02-15-08-23-58-%E9%87%8D%E8%BF%94%E6%9C%AA%E6%9D%A51999-%E5%8F%B8%E6%8E%8C%E6%97%B6%E9%97%B4%E4%B9%8B%E4%BA%BA.jpg";
-      primary-color = "#000000000000";
-      secondary-color = "#000000000000";
     };
 
     "org/gnome/desktop/search-providers" = {
@@ -208,10 +190,15 @@ with lib.hm.gvariant;
 
     "org/gnome/nautilus/window-state" = {
       initial-size = mkTuple [ 890 550 ];
-      maximized = true;
+      maximized = false;
     };
 
     "org/gnome/nm-applet/eap/5a239281-7659-4be1-8d8f-5893ae717f43" = {
+      ignore-ca-cert = false;
+      ignore-phase2-ca-cert = false;
+    };
+
+    "org/gnome/nm-applet/eap/8f09e647-4a72-44ce-8928-cd1494d80ab4" = {
       ignore-ca-cert = false;
       ignore-phase2-ca-cert = false;
     };
@@ -259,8 +246,8 @@ with lib.hm.gvariant;
       app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'com.nextcloud.desktopclient.nextcloud.desktop': <{'position': <9>}>, 'org.kde.okular.desktop': <{'position': <10>}>, 'gnome-system-monitor.desktop': <{'position': <11>}>, 'org.qutebrowser.qutebrowser.desktop': <{'position': <12>}>, 'org.telegram.desktop.desktop': <{'position': <13>}>, 'code.desktop': <{'position': <14>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" ];
-      favorite-apps = [ "org.gnome.Nautilus.desktop" "st-256color.desktop" "org.kde.konsole.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.20.desktop" ];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" ];
+      favorite-apps = [ "org.gnome.Nautilus.desktop" "st-256color.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.20.desktop" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -278,13 +265,35 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 1;
+      indicator-position-max = 2;
+    };
+
+    "org/gnome/shell/extensions/dash-to-dock" = {
+      background-opacity = 0.8;
+      click-action = "launch";
+      dash-max-icon-size = 48;
+      dock-position = "BOTTOM";
+      height-fraction = 0.9;
+      preferred-monitor = -2;
+      preferred-monitor-by-connector = "eDP-1";
     };
 
     "org/gnome/shell/extensions/extension-list" = {
       button-icon = mkUint32 0;
       hide-disabled = true;
       toggle-unpin = false;
+      unpin-list = [ "gsconnect@andyholmes.github.io" ];
+    };
+
+    "org/gnome/shell/extensions/gsconnect" = {
+      enabled = false;
+      id = "f820adc3-fa5d-47dc-864b-105e8fd86fb8";
+      name = "nixos";
+    };
+
+    "org/gnome/shell/extensions/gsconnect/preferences" = {
+      window-maximized = false;
+      window-size = mkTuple [ 640 440 ];
     };
 
     "org/gnome/shell/extensions/just-perfection" = {
@@ -348,7 +357,7 @@ with lib.hm.gvariant;
       sort-directories-first = false;
       sort-order = "ascending";
       type-format = "category";
-      window-position = mkTuple [ 168 35 ];
+      window-position = mkTuple [ 0 28 ];
       window-size = mkTuple [ 1097 823 ];
     };
 

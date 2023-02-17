@@ -15,8 +15,6 @@
         libsForQt5.ktorrent
         libsForQt5.okular
         libsForQt5.gwenview
-        # libsForQt5.dolphin
-        # libsForQt5.dolphin-plugins
         libsForQt5.breeze-qt5
         libsForQt5.breeze-gtk
         libsForQt5.breeze-icons
