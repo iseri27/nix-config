@@ -10,7 +10,7 @@
         gnome.gnome-tweaks
         gnome.dconf-editor
         dconf2nix
-        nur-corona.gnome-extension-input-method-panel
+        nur-corona.gnomeExtensions.input-method-panel
     ] ++ (with gnomeExtensions; [
         appindicator
         blur-my-shell
