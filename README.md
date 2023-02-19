@@ -10,11 +10,11 @@ git clone --depth=1 https://github.com/corona09/nix-config.git
 
 运行仓库下的 `sync.sh` 脚本, 覆盖 `/etc/nixos` 下的配置文件 (如果是安装过程, 请自行拷贝文件).
 
-将 `/etc/nixos/hardware-configuration.nix` 替换为之前拷贝的 `hardware-configuration.nix` .
+将 `/etc/nixos/hardware/default.nix` 替换为之前拷贝的 `hardware-configuration.nix` .
 
-`/etc/nixos/modules/hardware.nix` 中有与部分硬件相关的设置 (主要是 Legacy 与 UEFI 相关).
+`/etc/nixos/modules/boot` 中有与部分启动相关的设置 (Legacy / UEFI ).
 
-软件包配置在 `modules/syspkgs.nix` 中, 可以根据需要添加/删除相应的包.
+软件包配置在 `/etc/nixos/modules/syspkgs` 中, 可以根据需要添加/删除相应的包.
 
 配置好网络, chick start! (~~小黑子~~)
 
