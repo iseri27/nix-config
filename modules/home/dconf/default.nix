@@ -46,7 +46,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" = {
-      apps = [ "org.fcitx.Fcitx5.desktop" "fcitx5-configtool.desktop" "org.fcitx.fcitx5-migrator.desktop" "conky.desktop" "nixos-manual.desktop" "nvim.desktop" "fish.desktop" "xterm.desktop" "ranger.desktop" "org.kde.kwrite.desktop" "nm-connection-editor.desktop" "picom.desktop" "umpv.desktop" "mpv.desktop" "vlc.desktop" "org.pwmt.zathura.desktop" "blueman-manager.desktop" "kbd-layout-viewer5.desktop" "org.gnome.Logs.desktop" "org.gnome.Calendar.desktop" ];
+      apps = [ "fcitx5-configtool.desktop" "nixos-manual.desktop" "nvim.desktop" "ranger.desktop" "org.kde.kwrite.desktop" "mpv.desktop" "org.gnome.Calendar.desktop" "vlc.desktop" "org.gnome.Logs.desktop" "umpv.desktop" "org.pwmt.zathura.desktop" "kbd-layout-viewer5.desktop" "org.fcitx.Fcitx5.desktop" "org.fcitx.fcitx5-migrator.desktop" "xterm.desktop" "fish.desktop" "nm-connection-editor.desktop" ];
       name = "杂";
       translate = false;
     };
@@ -85,7 +85,7 @@ with lib.hm.gvariant;
       font-hinting = "slight";
       font-name = "Noto Sans CJK SC 10";
       gtk-theme = "WhiteSur-Dark";
-      icon-theme = "WhiteSur-dark";
+      icon-theme = "Papirus-Dark";
       monospace-font-name = "Noto Sans Mono CJK SC 10";
       toolbar-style = "text";
     };
@@ -243,11 +243,11 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'com.nextcloud.desktopclient.nextcloud.desktop': <{'position': <9>}>, 'org.kde.okular.desktop': <{'position': <10>}>, 'gnome-system-monitor.desktop': <{'position': <11>}>, 'org.qutebrowser.qutebrowser.desktop': <{'position': <12>}>, 'org.telegram.desktop.desktop': <{'position': <13>}>, 'code.desktop': <{'position': <14>}>}]";
+      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.konsole.desktop': <{'position': <8>}>, 'org.kde.ktorrent.desktop': <{'position': <9>}>, 'com.nextcloud.desktopclient.nextcloud.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'org.qutebrowser.qutebrowser.desktop': <{'position': <12>}>, 'org.telegram.desktop.desktop': <{'position': <13>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" ];
-      favorite-apps = [ "org.gnome.Nautilus.desktop" "st-256color.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.20.desktop" ];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" "soft-brightness@fifi.org" ];
+      favorite-apps = [ "org.kde.dolphin.desktop" "st-256color.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.20.desktop" "code.desktop" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -275,7 +275,8 @@ with lib.hm.gvariant;
       dock-position = "BOTTOM";
       height-fraction = 0.9;
       preferred-monitor = -2;
-      preferred-monitor-by-connector = "eDP-1";
+      preferred-monitor-by-connector = "HDMI-1";
+      show-trash = false;
     };
 
     "org/gnome/shell/extensions/extension-list" = {
@@ -318,6 +319,11 @@ with lib.hm.gvariant;
       icon-path = "";
       icon-size = 1.365854;
       text = "活动";
+    };
+
+    "org/gnome/shell/extensions/soft-brightness" = {
+      clone-mouse = false;
+      current-brightness = 0.7005321887112403;
     };
 
     "org/gnome/shell/extensions/user-theme" = {

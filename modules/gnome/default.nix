@@ -11,7 +11,6 @@
         gnome.gnome-tweaks
         gnome.dconf-editor
         dconf2nix
-        nautilus-open-any-terminal
         nur-corona.gnomeExtensions.input-method-panel
     ] ++ (with gnomeExtensions; [
         appindicator
@@ -46,6 +45,7 @@
 
         hitori
         iagno
+        nautilus
         simple-scan
         tali totem
         yelp
