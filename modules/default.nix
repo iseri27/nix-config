@@ -2,13 +2,11 @@
 {
     imports = [
         ./boot
-        ./fonts
-        ./locale
-        ./desktop
         ./display
+        ./gnome
+        ./locale
+        ./programs
         ./syspkgs
         ./users
-        ./gnome
-        ./programs
     ];
 }

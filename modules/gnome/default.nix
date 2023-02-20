@@ -3,6 +3,7 @@
     services.packagekit.enable = false;
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.desktopManager.gnome.enable = true;
+    services.gvfs.enable = true;
     services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
     services.gnome.core-developer-tools.enable = false;
     services.gnome.games.enable = false;
@@ -10,6 +11,7 @@
         gnome.gnome-tweaks
         gnome.dconf-editor
         dconf2nix
+        nautilus-open-any-terminal
         nur-corona.gnomeExtensions.input-method-panel
     ] ++ (with gnomeExtensions; [
         appindicator

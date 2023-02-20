@@ -38,6 +38,7 @@
         acpi aria atool
         bat bc brightnessctl
         catdoc clang clang-tools croc ctags
+        dos2unix
         exa
         ffmpeg ffmpegthumbnailer file fzf
         gcc git gnumake gnome-epub-thumbnailer
@@ -48,15 +49,32 @@
         mediainfo mpd mpv
         ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
         odt2txt openssh
-        pandoc p7zip parted pkg-config poppler_utils
+        p7zip pandoc papirus-icon-theme parted pkg-config poppler_utils
         qt5ct qutebrowser
         ranger rar rnix-lsp starship
         texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
         vscode-fhs
-        w3m wget
+        w3m wget whitesur-gtk-theme
         xclip xlsx2csv
         yarn
         zathura zip
-    ];
+
+        # 桌面软件
+        cantata
+        google-chrome
+        keepassxc
+        nextcloud-client
+        tdesktop
+        vlc
+        zotero
+    ] ++ (with pkgs.libsForQt5; [
+        ark
+        breeze-gtk breeze-icons breeze-qt5
+        dolphin
+        kate kio-extras ktorrent
+        gwenview
+        okular
+    ]);
+
 }
