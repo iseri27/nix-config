@@ -35,6 +35,11 @@ with lib.hm.gvariant;
       recent-connections = "[{'adapter': '94:F6:D6:24:9E:13', 'address': '12:34:C0:0E:9E:33', 'alias': 'MI Mouse BT3.0', 'icon': 'input-mouse', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1675663655.9366188'}]";
     };
 
+    "org/gnome/baobab/ui" = {
+      is-maximized = false;
+      window-size = mkTuple [ 960 600 ];
+    };
+
     "org/gnome/desktop/app-folders" = {
       folder-children = [ "Utilities" "YaST" "6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" "b7953d8a-9aa5-43fd-ac24-b7228a5df778" "03ce591a-01dc-4a68-8cce-a1fd8633cc9a" ];
     };
@@ -102,6 +107,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/gnome-power-panel" = {
       application-id = "gnome-power-panel.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/org-gnome-baobab" = {
+      application-id = "org.gnome.baobab.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
@@ -195,6 +204,11 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
+      night-light-last-coordinates = mkTuple [ 34.254500719942406 108.9246 ];
+      night-light-schedule-automatic = true;
+      night-light-schedule-from = 18.0;
+      night-light-schedule-to = 7.0;
+      night-light-temperature = mkUint32 2700;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
@@ -314,7 +328,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/soft-brightness" = {
       clone-mouse = false;
-      current-brightness = 0.700532;
+      current-brightness = 0.683772;
       use-backlight = false;
     };
 
@@ -322,8 +336,16 @@ with lib.hm.gvariant;
       name = "WhiteSur-Dark";
     };
 
+    "org/gnome/shell/keybindings" = {
+      show-screenshot-ui = [ "<Shift><Super>s" ];
+    };
+
     "org/gnome/shell/world-clocks" = {
       locations = "@av []";
+    };
+
+    "org/gnome/system/location" = {
+      enabled = true;
     };
 
     "org/gnome/tweaks" = {
