@@ -10,6 +10,5 @@
         ./users
         ./gnome
         ./programs
-        ./python
     ];
 }

@@ -30,21 +30,16 @@
         config.nur.repos.xddxdd.baidupcs-go
 
         nur-corona.cfft
-        nur-corona.dwm
-        nur-corona.dmenu
-        nur-corona.dwmblocks
         nur-corona.gbkunzip
         nur-corona.qq
         nur-corona.st
-        nur-corona.todo
 
         # Basic Packages:
         acpi aria atool
         bat bc brightnessctl
-        catdoc clang clang-tools conky croc ctags
-        dunst
+        catdoc clang clang-tools croc ctags
         exa
-        feh ffmpeg ffmpegthumbnailer file fzf
+        ffmpeg ffmpegthumbnailer file fzf
         gcc git gnumake gnome-epub-thumbnailer
         imagemagick
         jq
@@ -53,15 +48,14 @@
         mediainfo mpd mpv
         ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
         odt2txt openssh
-        pandoc p7zip parted picom pkg-config poppler_utils
+        pandoc p7zip parted pkg-config poppler_utils
         qt5ct qutebrowser
         ranger rar rnix-lsp starship
-        sxhkd
         texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
         vscode-fhs
         w3m wget
-        xclip xlsx2csv xorg.xinit
+        xclip xlsx2csv
         yarn
         zathura zip
     ];

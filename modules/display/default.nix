@@ -7,8 +7,6 @@
     
     services.xserver.enable = true;
     services.xserver.layout = "us";
-    services.xserver.windowManager.dwm.package = pkgs.nur-corona.dwm;
-    services.xserver.windowManager.dwm.enable = true;
     services.xserver.xkbOptions = "ctrl:swapcaps";
     services.xserver.libinput.enable = true;
 }
