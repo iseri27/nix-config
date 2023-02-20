@@ -46,7 +46,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" = {
-      apps = [ "fcitx5-configtool.desktop" "nixos-manual.desktop" "nvim.desktop" "ranger.desktop" "org.kde.kwrite.desktop" "mpv.desktop" "org.gnome.Calendar.desktop" "vlc.desktop" "org.gnome.Logs.desktop" "umpv.desktop" "org.pwmt.zathura.desktop" "kbd-layout-viewer5.desktop" "org.fcitx.Fcitx5.desktop" "org.fcitx.fcitx5-migrator.desktop" "xterm.desktop" "fish.desktop" "nm-connection-editor.desktop" ];
+      apps = [ "fcitx5-configtool.desktop" "nvim.desktop" "ranger.desktop" "org.kde.kwrite.desktop" "mpv.desktop" "org.gnome.Calendar.desktop" "vlc.desktop" "org.gnome.Logs.desktop" "com.nextcloud.desktopclient.nextcloud.desktop" "umpv.desktop" "org.pwmt.zathura.desktop" "kbd-layout-viewer5.desktop" "org.fcitx.Fcitx5.desktop" "org.fcitx.fcitx5-migrator.desktop" "xterm.desktop" "nixos-manual.desktop" "fish.desktop" "nm-connection-editor.desktop" "org.qutebrowser.qutebrowser.desktop" ];
       name = "杂";
       translate = false;
     };
@@ -220,7 +220,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Alt>e";
-      command = "nautilus";
+      command = "dolphin";
       name = "文件管理器";
     };
 
@@ -243,7 +243,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.konsole.desktop': <{'position': <8>}>, 'org.kde.ktorrent.desktop': <{'position': <9>}>, 'com.nextcloud.desktopclient.nextcloud.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'org.qutebrowser.qutebrowser.desktop': <{'position': <12>}>, 'org.telegram.desktop.desktop': <{'position': <13>}>}]";
+      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.konsole.desktop': <{'position': <8>}>, 'org.kde.ktorrent.desktop': <{'position': <9>}>, 'org.kde.okular.desktop': <{'position': <10>}>, 'org.telegram.desktop.desktop': <{'position': <11>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" "soft-brightness@fifi.org" ];
@@ -265,7 +265,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 2;
+      indicator-position-max = 1;
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
@@ -323,7 +323,8 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/soft-brightness" = {
       clone-mouse = false;
-      current-brightness = 0.7005321887112403;
+      current-brightness = 0.700532;
+      use-backlight = false;
     };
 
     "org/gnome/shell/extensions/user-theme" = {
