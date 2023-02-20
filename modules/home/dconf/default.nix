@@ -52,9 +52,9 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.font-viewer.desktop" "org.gnome.Console.desktop" ];
+      apps = [ "org.gnome.Connections.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.font-viewer.desktop" "org.gnome.Console.desktop" ];
       categories = [ "X-GNOME-Utilities" ];
-      excluded-apps = [ "org.gnome.tweaks.desktop" "org.gnome.seahorse.Application.desktop" "nm-connection-editor.desktop" "picom.desktop" "org.gnome.Logs.desktop" ];
+      excluded-apps = [ "org.gnome.tweaks.desktop" "org.gnome.seahorse.Application.desktop" "nm-connection-editor.desktop" "picom.desktop" "org.gnome.Logs.desktop" "org.gnome.baobab.desktop" ];
       name = "X-GNOME-Utilities.directory";
       translate = true;
     };
@@ -130,7 +130,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
-      natural-scroll = false;
+      natural-scroll = true;
       send-events = "enabled";
       tap-to-click = true;
       two-finger-scrolling-enabled = true;
@@ -176,21 +176,6 @@ with lib.hm.gvariant;
       edge-tiling = true;
       focus-change-on-pointer-rest = true;
       workspaces-only-on-primary = true;
-    };
-
-    "org/gnome/nautilus/compression" = {
-      default-compression-format = "zip";
-    };
-
-    "org/gnome/nautilus/preferences" = {
-      default-folder-viewer = "icon-view";
-      migrated-gtk-settings = true;
-      search-filter-time-type = "last_modified";
-    };
-
-    "org/gnome/nautilus/window-state" = {
-      initial-size = mkTuple [ 890 550 ];
-      maximized = false;
     };
 
     "org/gnome/nm-applet/eap/5a239281-7659-4be1-8d8f-5893ae717f43" = {
@@ -243,7 +228,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.konsole.desktop': <{'position': <8>}>, 'org.kde.ktorrent.desktop': <{'position': <9>}>, 'org.kde.okular.desktop': <{'position': <10>}>, 'org.telegram.desktop.desktop': <{'position': <11>}>}]";
+      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'org.gnome.baobab.desktop': <{'position': <4>}>, 'cantata.desktop': <{'position': <5>}>, 'org.kde.gwenview.desktop': <{'position': <6>}>, 'org.kde.kate.desktop': <{'position': <7>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <8>}>, 'org.kde.konsole.desktop': <{'position': <9>}>, 'org.kde.ktorrent.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'org.telegram.desktop.desktop': <{'position': <12>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" "soft-brightness@fifi.org" ];

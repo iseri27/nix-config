@@ -29,7 +29,6 @@
 
     # 不安装的软件与插件
     environment.gnome.excludePackages = (with pkgs; [
-        baobab
         gnome-photos gnome-tour gnome-text-editor gnome-connections gnome-console gnome-user-docs
     ]) ++ (with pkgs.gnome; [
         atomix
