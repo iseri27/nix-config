@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Breeze
+ColorScheme=WhiteOnBlack
 EmojiFont=Noto Color Emoji,13,-1,5,50,0,0,0,0,0
 Font=FiraCode Nerd Font,13,-1,5,50,0,0,0,0,0
 
