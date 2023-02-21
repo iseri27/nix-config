@@ -203,6 +203,10 @@ with lib.hm.gvariant;
       toggle-tiled-right = [ "<Alt>Right" ];
     };
 
+    "org/gnome/mutter/wayland/keybindings" = {
+      restore-shortcuts = [];
+    };
+
     "org/gnome/nm-applet/eap/5a239281-7659-4be1-8d8f-5893ae717f43" = {
       ignore-ca-cert = false;
       ignore-phase2-ca-cert = false;
@@ -228,7 +232,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" ];
       help = [];
       www = [ "<Alt>c" ];
     };
@@ -261,6 +265,12 @@ with lib.hm.gvariant;
       binding = "<Super>Return";
       command = "konsole";
       name = "konsole";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
+      binding = "<Shift><Super>Return";
+      command = "ranger";
+      name = "ranger";
     };
 
     "org/gnome/shell" = {
@@ -298,6 +308,7 @@ with lib.hm.gvariant;
       toggle-unpin = false;
     };
 
+
     "org/gnome/shell/extensions/just-perfection" = {
       calendar = true;
       dash = true;
@@ -314,44 +325,6 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/kimpanel" = {
       font = "Noto Sans CJK SC 13";
-    };
-
-    "org/gnome/shell/extensions/nightthemeswitcher/commands" = {
-      enabled = true;
-      sunrise = "gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false";
-      sunset = "gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true";
-    };
-
-    "org/gnome/shell/extensions/nightthemeswitcher/cursor-variants" = {
-      day = "breeze_cursors";
-      enabled = true;
-      night = "breeze_cursors";
-    };
-
-    "org/gnome/shell/extensions/nightthemeswitcher/gtk-variants" = {
-      day = "WhiteSur-Dark";
-      enabled = true;
-      night = "WhiteSur-Dark";
-    };
-
-    "org/gnome/shell/extensions/nightthemeswitcher/icon-variants" = {
-      day = "Papirus-Dark";
-      enabled = true;
-      night = "Papirus-Dark";
-    };
-
-    "org/gnome/shell/extensions/nightthemeswitcher/shell-variants" = {
-      day = "WhiteSur-Dark";
-      enabled = true;
-      night = "WhiteSur-Dark";
-    };
-
-    "org/gnome/shell/extensions/nightthemeswitcher/time" = {
-      location = mkTuple [ 34.254500719942406 108.9246 ];
-      manual-schedule = true;
-      nightthemeswitcher-ondemand-keybinding = [ "" ];
-      sunrise = 6.0;
-      sunset = 18.12741818730523;
     };
 
     "org/gnome/shell/extensions/replaceActivitiesText" = {
