@@ -187,4 +187,7 @@
     "cnblogsClientForVSCode.macos.chromiumPath": "",
     "cnblogsClientForVSCode.workspace": "/home/corona/Documents/cnblogs",
     "cnblogsClientForVSCode.windows.chromiumPath": "",
+	    "[python]": {
+        "editor.formatOnType": true
+    },
 }
