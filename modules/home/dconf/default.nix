@@ -28,17 +28,12 @@ with lib.hm.gvariant;
       window-size = mkTuple [ 960 600 ];
     };
 
-    "org/gnome/control-center" = {
-      last-panel = "keyboard";
-      window-state = mkTuple [ 980 640 ];
-    };
-
     "org/gnome/desktop/app-folders" = {
       folder-children = [ "Utilities" "YaST" "6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" "b7953d8a-9aa5-43fd-ac24-b7228a5df778" "03ce591a-01dc-4a68-8cce-a1fd8633cc9a" ];
     };
 
     "org/gnome/desktop/app-folders/folders/03ce591a-01dc-4a68-8cce-a1fd8633cc9a" = {
-      apps = [ "org.gnome.Settings.desktop" "org.gnome.tweaks.desktop" "org.gnome.Extensions.desktop" "org.gnome.baobab.desktop" "ca.desrt.dconf-editor.desktop" "org.gnome.seahorse.Application.desktop" "qt5ct.desktop" ];
+      apps = [ "org.gnome.Settings.desktop" "org.gnome.tweaks.desktop" "org.gnome.Extensions.desktop" "org.gnome.baobab.desktop" "ca.desrt.dconf-editor.desktop" "org.gnome.seahorse.Application.desktop" "qt5ct.desktop" "gnome-system-monitor.desktop" ];
       name = "系统";
       translate = false;
     };
@@ -50,7 +45,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "org.gnome.Connections.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.font-viewer.desktop" "org.gnome.Console.desktop" ];
+      apps = [ "org.gnome.Screenshot.desktop" ];
       categories = [ "X-GNOME-Utilities" ];
       excluded-apps = [ "org.gnome.tweaks.desktop" "org.gnome.seahorse.Application.desktop" "nm-connection-editor.desktop" "picom.desktop" "org.gnome.Logs.desktop" "org.gnome.baobab.desktop" ];
       name = "X-GNOME-Utilities.directory";
@@ -263,7 +258,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'org.kde.okular.desktop': <{'position': <9>}>, 'org.telegram.desktop.desktop': <{'position': <10>}>}]";
+      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'org.kde.okular.desktop': <{'position': <9>}>, 'org.telegram.desktop.desktop': <{'position': <10>}>, 'Utilities': <{'position': <11>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "extension-list@tu.berry" "soft-brightness@fifi.org" ];

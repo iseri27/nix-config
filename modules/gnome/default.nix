@@ -10,6 +10,7 @@
     environment.systemPackages = with pkgs; [
         gnome.gnome-tweaks
         gnome.dconf-editor
+        gnome.gnome-system-monitor
         dconf2nix
         nur-corona.gnomeExtensions.input-method-panel
     ] ++ (with gnomeExtensions; [
@@ -40,7 +41,7 @@
         # gnome-shell-extensions 这个包是若干个扩展的集合，而不是 gnome 扩展本身
         gnome-calculator gnome-characters gnome-clocks gnome-contacts gnome-disk-utility 
         gnome-font-viewer gnome-maps gnome-music gnome-shell-extensions gnome-software
-        gnome-system-monitor gnome-terminal gnome-weather
+        gnome-terminal gnome-weather
 
         hitori
         iagno
