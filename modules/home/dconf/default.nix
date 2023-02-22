@@ -40,6 +40,11 @@ with lib.hm.gvariant;
       window-size = mkTuple [ 960 600 ];
     };
 
+    "org/gnome/control-center" = {
+      last-panel = "keyboard";
+      window-state = mkTuple [ 980 640 ];
+    };
+
     "org/gnome/desktop/app-folders" = {
       folder-children = [ "Utilities" "YaST" "6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" "b7953d8a-9aa5-43fd-ac24-b7228a5df778" "03ce591a-01dc-4a68-8cce-a1fd8633cc9a" ];
     };
@@ -125,6 +130,10 @@ with lib.hm.gvariant;
       application-id = "org.kde.dolphin.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-kde-ktorrent" = {
+      application-id = "org.kde.ktorrent.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/org-telegram-desktop" = {
       application-id = "org.telegram.desktop.desktop";
     };
@@ -155,6 +164,8 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/wm/keybindings" = {
       close = [ "<Alt>q" ];
+      maximize = [ "<Alt>Up" ];
+      unmaximize = [ "<Alt>Down" ];
     };
 
     "org/gnome/desktop/wm/preferences" = {
@@ -187,6 +198,11 @@ with lib.hm.gvariant;
       workspaces-only-on-primary = true;
     };
 
+    "org/gnome/mutter/keybindings" = {
+      toggle-tiled-left = [ "<Alt>Left" ];
+      toggle-tiled-right = [ "<Alt>Right" ];
+    };
+
     "org/gnome/nm-applet/eap/5a239281-7659-4be1-8d8f-5893ae717f43" = {
       ignore-ca-cert = false;
       ignore-phase2-ca-cert = false;
@@ -204,7 +220,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
-      night-light-last-coordinates = mkTuple [ 34.254500719942406 108.9246 ];
+      night-light-last-coordinates = mkTuple [ 34.272499280057595 108.9246 ];
       night-light-schedule-automatic = true;
       night-light-schedule-from = 18.0;
       night-light-schedule-to = 7.0;
@@ -251,7 +267,7 @@ with lib.hm.gvariant;
       app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'org.kde.okular.desktop': <{'position': <9>}>, 'org.telegram.desktop.desktop': <{'position': <10>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "bluetooth-quick-connect@bjarosze.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" "soft-brightness@fifi.org" ];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "extension-list@tu.berry" "soft-brightness@fifi.org" ];
       favorite-apps = [ "org.kde.dolphin.desktop" "st-256color.desktop" "org.kde.konsole.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.20.desktop" "code.desktop" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
@@ -259,14 +275,6 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/app-switcher" = {
       current-workspace-only = false;
-    };
-
-    "org/gnome/shell/extensions/bluetooth-quick-connect" = {
-      bluetooth-auto-power-on = true;
-      debug-mode-on = true;
-      keep-menu-on-toggle = true;
-      refresh-button-on = true;
-      show-battery-value-on = true;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
@@ -288,18 +296,6 @@ with lib.hm.gvariant;
       button-icon = mkUint32 0;
       hide-disabled = true;
       toggle-unpin = false;
-      unpin-list = [ "gsconnect@andyholmes.github.io" ];
-    };
-
-    "org/gnome/shell/extensions/gsconnect" = {
-      enabled = false;
-      id = "f820adc3-fa5d-47dc-864b-105e8fd86fb8";
-      name = "nixos";
-    };
-
-    "org/gnome/shell/extensions/gsconnect/preferences" = {
-      window-maximized = false;
-      window-size = mkTuple [ 640 440 ];
     };
 
     "org/gnome/shell/extensions/just-perfection" = {
@@ -318,6 +314,44 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/kimpanel" = {
       font = "Noto Sans CJK SC 13";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/commands" = {
+      enabled = true;
+      sunrise = "gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false";
+      sunset = "gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/cursor-variants" = {
+      day = "breeze_cursors";
+      enabled = true;
+      night = "breeze_cursors";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/gtk-variants" = {
+      day = "WhiteSur-Dark";
+      enabled = true;
+      night = "WhiteSur-Dark";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/icon-variants" = {
+      day = "Papirus-Dark";
+      enabled = true;
+      night = "Papirus-Dark";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/shell-variants" = {
+      day = "WhiteSur-Dark";
+      enabled = true;
+      night = "WhiteSur-Dark";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/time" = {
+      location = mkTuple [ 34.254500719942406 108.9246 ];
+      manual-schedule = true;
+      nightthemeswitcher-ondemand-keybinding = [ "" ];
+      sunrise = 6.0;
+      sunset = 18.12741818730523;
     };
 
     "org/gnome/shell/extensions/replaceActivitiesText" = {
