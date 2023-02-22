@@ -269,7 +269,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
       binding = "<Shift><Super>Return";
-      command = "ranger";
+      command = "konsole -e ranger";
       name = "ranger";
     };
 
