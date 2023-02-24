@@ -84,8 +84,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "org-kde-dolphin" "gnome-power-panel" "gnome-network-panel" "org-gnome-tweaks" "org-gnome-nautilus" ];
-      show-banners = true;
+      application-children = [ "org-kde-dolphin" "gnome-power-panel" "gnome-network-panel" "org-gnome-tweaks" "org-gnome-nautilus" "qq" ];
+      show-banners = false;
       show-in-lock-screen = false;
     };
 
@@ -125,6 +125,10 @@ with lib.hm.gvariant;
       application-id = "qq.desktop";
     };
 
+    "org/gnome/desktop/peripherals/keyboard" = {
+      numlock-state = true;
+    };
+
     "org/gnome/desktop/peripherals/mouse" = {
       natural-scroll = false;
       speed = 6.1404e-2;
@@ -147,8 +151,27 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/wm/keybindings" = {
       close = [ "<Alt>q" ];
-      maximize = [ "<Alt>Up" ];
-      unmaximize = [ "<Alt>Down" ];
+      cycle-group = [];
+      cycle-group-backward = [];
+      cycle-panels = [];
+      cycle-panels-backward = [];
+      cycle-windows = [];
+      cycle-windows-backward = [];
+      move-to-monitor-down = [];
+      move-to-monitor-left = [];
+      move-to-monitor-right = [];
+      move-to-monitor-up = [];
+      move-to-workspace-1 = [];
+      move-to-workspace-last = [];
+      move-to-workspace-left = [ "<Shift><Control><Alt>Left" ];
+      move-to-workspace-right = [ "<Shift><Control><Alt>Right" ];
+      switch-panels = [];
+      switch-panels-backward = [];
+      switch-to-workspace-1 = [ "<Alt>1" ];
+      switch-to-workspace-2 = [ "<Alt>2" ];
+      switch-to-workspace-3 = [ "<Alt>3" ];
+      switch-to-workspace-4 = [ "<Alt>4" ];
+      switch-to-workspace-last = [];
     };
 
     "org/gnome/desktop/wm/preferences" = {
@@ -182,11 +205,6 @@ with lib.hm.gvariant;
       workspaces-only-on-primary = true;
     };
 
-    "org/gnome/mutter/keybindings" = {
-      toggle-tiled-left = [ "<Alt>Left" ];
-      toggle-tiled-right = [ "<Alt>Right" ];
-    };
-
     "org/gnome/mutter/wayland/keybindings" = {
       restore-shortcuts = [];
     };
@@ -208,7 +226,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
-      night-light-last-coordinates = mkTuple [ 34.272499 108.9246 ];
+      night-light-last-coordinates = mkTuple [ 34.254500719942406 108.9246 ];
       night-light-schedule-automatic = true;
       night-light-schedule-from = 18.0;
       night-light-schedule-to = 7.0;
@@ -216,7 +234,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" ];
       help = [];
       www = [ "<Alt>c" ];
     };
@@ -228,9 +246,9 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-      binding = "<Alt>Return";
+      binding = "<Super>Return";
       command = "st";
-      name = "启动终端";
+      name = "st";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
@@ -246,15 +264,21 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
-      binding = "<Super>Return";
+      binding = "<Alt>Return";
       command = "konsole";
       name = "konsole";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
-      binding = "<Shift><Super>Return";
+      binding = "<Shift><Alt>Return";
       command = "konsole -e ranger";
       name = "ranger";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6" = {
+      binding = "<Control><Alt>t";
+      command = "konsole";
+      name = "启动终端";
     };
 
     "org/gnome/shell" = {
@@ -272,7 +296,11 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 1;
+      countdown-timer = 0;
+      countdown-timer-enabled = false;
+      indicator-position-max = 3;
+      toggle-state = false;
+      user-enabled = false;
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
@@ -309,6 +337,44 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/kimpanel" = {
       font = "Noto Sans CJK SC 13";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/commands" = {
+      enabled = true;
+      sunrise = "gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false";
+      sunset = "gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/cursor-variants" = {
+      day = "breeze_cursors";
+      enabled = true;
+      night = "breeze_cursors";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/gtk-variants" = {
+      day = "WhiteSur-Dark";
+      enabled = true;
+      night = "WhiteSur-Dark";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/icon-variants" = {
+      day = "Papirus-Dark";
+      enabled = true;
+      night = "Papirus-Dark";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/shell-variants" = {
+      day = "WhiteSur-Dark";
+      enabled = true;
+      night = "WhiteSur-Dark";
+    };
+
+    "org/gnome/shell/extensions/nightthemeswitcher/time" = {
+      location = mkTuple [ 34.254500719942406 108.9246 ];
+      manual-schedule = true;
+      nightthemeswitcher-ondemand-keybinding = [ "" ];
+      sunrise = 6.0;
+      sunset = 18.12741818730523;
     };
 
     "org/gnome/shell/extensions/quick-settings-tweaks" = {
