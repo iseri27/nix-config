@@ -40,7 +40,7 @@
         catdoc clang clang-tools croc ctags
         dos2unix
         exa
-        ffmpeg ffmpegthumbnailer file fzf
+        ffmpeg ffmpegthumbnailer file fontforge fzf
         gcc git gnumake gnome-epub-thumbnailer
         imagemagick
         jq

@@ -195,18 +195,20 @@ handle_image() {
 
 
         ## ePub, MOBI, FB2 (using Calibre)
-		## 需要安装: pacman -S gnome-epub-thumbnailer
+		## 需要安装: gnome-epub-thumbnailer
+		## 在 nixos 下可执行程序名为 gnome-epub-thumbnailer
+		## 在 arch linux 下可执行文件名为 epub-thumbnailer
         application/epub+zip|application/x-mobipocket-ebook|\
         application/x-fictionbook+xml)
             # ePub (using https://github.com/marianosimone/epub-thumbnailer)
-            epub-thumbnailer "${FILE_PATH}" "${IMAGE_CACHE_PATH}" \
-                "${DEFAULT_SIZE%x*}" && exit 6
+            gnome-epub-thumbnailer "${FILE_PATH}" "${IMAGE_CACHE_PATH}" -s "${DEFAULT_SIZE%x*}" && exit 6
+			# ebook-meta 由 clibre 提供
             ebook-meta --get-cover="${IMAGE_CACHE_PATH}" -- "${FILE_PATH}" \
                 >/dev/null && exit 6
             exit 1;;
 
         ## Font
-        application/font*|application/*opentype)
+        application/font*|application/*opentype|font/*)
             preview_png="/tmp/$(basename "${IMAGE_CACHE_PATH%.*}").png"
             if fontimage -o "${preview_png}" \
                          --pixelsize "120" \
