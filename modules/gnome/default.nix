@@ -13,6 +13,7 @@
         gnome.gnome-system-monitor
         dconf2nix
         nur-corona.gnomeExtensions.input-method-panel
+        nur-corona.gnomeExtensions.colored-application-menu-icon
     ] ++ (with gnomeExtensions; [
         appindicator
         blur-my-shell
