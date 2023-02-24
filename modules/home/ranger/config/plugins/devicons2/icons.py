@@ -159,7 +159,7 @@ file_node_extensions = {
     'vala'        : ''
 }
 file_node_exact_matches = {
-    'root'                             : '',
+    'nix'                              : '',
     'home'                             : '',
     'corona'                           : '',
     'hhd'                              : '',
@@ -169,7 +169,6 @@ file_node_exact_matches = {
     'downloads'                        : '',
     'music'                            : '',
     'pictures'                         : '',
-    'images'                           : '',
     '.img'                             : '',
     'applications'                     : '',
     'study'                            : '',
@@ -193,14 +192,17 @@ file_node_exact_matches = {
     'blog'                             : '',
     '_posts'                           : '',
 
-    # 'avatar'                           : '﭂',
-    # '头像'                             : '﭂',
+    'avatar'                           : '',
+    '头像'                             : '',
     'screenshots'                      : '',
     '截图'                             : '',
     'screenlock'                       : '',
     'wallpaper'                        : '',
     '壁纸'                             : '',
     'animation'                        : '♥',
+    '动漫'                             : '♥',
+    'images'                           : '',
+    '图片'                             : '',
 
     'bin'                              : 'ﰌ',
     'lib'                              : '',
