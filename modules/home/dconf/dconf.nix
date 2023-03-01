@@ -89,6 +89,10 @@ with lib.hm.gvariant;
       show-in-lock-screen = false;
     };
 
+    "org/gnome/desktop/notifications/application/com-nextcloud-desktopclient-nextcloud" = {
+      application-id = "com.nextcloud.desktopclient.nextcloud.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/gnome-network-panel" = {
       application-id = "gnome-network-panel.desktop";
     };
@@ -240,7 +244,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/" ];
       help = [];
       www = [ "<Alt>c" ];
     };
@@ -287,11 +291,16 @@ with lib.hm.gvariant;
       name = "启动终端";
     };
 
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7" = {
+      binding = "<Alt>semicolon";
+      command = "sh -c \"st -e nvim -n ~/.todolist\"";
+      name = "Todo";
+    };
+
     "org/gnome/shell" = {
       app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'org.kde.okular.desktop': <{'position': <9>}>, 'org.telegram.desktop.desktop': <{'position': <10>}>}]";
       disable-user-extensions = false;
-      disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "extension-list@tu.berry" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" ];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "extension-list@tu.berry" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" ];
       favorite-apps = [ "org.kde.dolphin.desktop" "st-256color.desktop" "org.kde.konsole.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.20.desktop" "code.desktop" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
@@ -423,10 +432,14 @@ with lib.hm.gvariant;
       show-extensions-notice = false;
     };
 
+    "org/gtk/gtk4/settings/color-chooser" = {
+      selected-color = mkTuple [ true 0.0 ];
+    };
+
     "org/gtk/gtk4/settings/file-chooser" = {
       date-format = "regular";
       location-mode = "path-bar";
-      show-hidden = true;
+      show-hidden = false;
       show-size-column = true;
       show-type-column = true;
       sidebar-width = 140;

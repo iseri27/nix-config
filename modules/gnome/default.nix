@@ -18,14 +18,12 @@
         appindicator
         blur-my-shell
         caffeine
-        command-menu
         dash-to-dock
         extension-list
         fuzzy-app-search
         just-perfection
         proxy-switcher
-        removable-drive-menu
-        replace-activities-text
+        removable-drive-menu replace-activities-text
         user-themes
     ]);
 
