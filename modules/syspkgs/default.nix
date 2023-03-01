@@ -65,14 +65,14 @@
         google-chrome
         keepassxc
         nextcloud-client
-        tdesktop
+        tdesktop transmission-gtk
         vlc
         zotero
     ] ++ (with pkgs.libsForQt5; [
         ark
         breeze-gtk breeze-icons breeze-qt5
         dolphin
-        kate kio-extras ktorrent
+        kate kio-extras
         gwenview
         okular
     ]);

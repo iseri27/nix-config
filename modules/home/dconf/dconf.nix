@@ -39,7 +39,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6" = {
-      apps = [ "fcitx5-configtool.desktop" "nvim.desktop" "org.kde.kwrite.desktop" "mpv.desktop" "org.gnome.Calendar.desktop" "vlc.desktop" "org.gnome.Logs.desktop" "ranger.desktop" "com.nextcloud.desktopclient.nextcloud.desktop" "umpv.desktop" "org.pwmt.zathura.desktop" "kbd-layout-viewer5.desktop" "org.fcitx.Fcitx5.desktop" "org.fcitx.fcitx5-migrator.desktop" "xterm.desktop" "nixos-manual.desktop" "fish.desktop" "nm-connection-editor.desktop" "org.qutebrowser.qutebrowser.desktop" ];
+      apps = [ "fcitx5-configtool.desktop" "nvim.desktop" "org.kde.kwrite.desktop" "mpv.desktop" "org.gnome.Calendar.desktop" "vlc.desktop" "org.gnome.Logs.desktop" "ranger.desktop" "com.nextcloud.desktopclient.nextcloud.desktop" "umpv.desktop" "org.pwmt.zathura.desktop" "kbd-layout-viewer5.desktop" "org.fcitx.Fcitx5.desktop" "org.fcitx.fcitx5-migrator.desktop" "xterm.desktop" "nixos-manual.desktop" "fish.desktop" "nm-connection-editor.desktop" "org.qutebrowser.qutebrowser.desktop" "org.fontforge.FontForge.desktop" ];
       name = "杂";
       translate = false;
     };
@@ -204,7 +204,7 @@ with lib.hm.gvariant;
 
     "org/gnome/mutter" = {
       attach-modal-dialogs = true;
-      center-new-windows = false;
+      center-new-windows = true;
       dynamic-workspaces = true;
       edge-tiling = true;
       focus-change-on-pointer-rest = true;
@@ -288,7 +288,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'org.kde.okular.desktop': <{'position': <9>}>, 'org.telegram.desktop.desktop': <{'position': <10>}>, 'Utilities': <{'position': <11>}>}]";
+      app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.ktorrent.desktop': <{'position': <8>}>, 'org.kde.okular.desktop': <{'position': <9>}>, 'org.telegram.desktop.desktop': <{'position': <10>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "todo.txt@bart.libert.gmail.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "extension-list@tu.berry" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" ];
@@ -302,16 +302,14 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      countdown-timer = 0;
-      countdown-timer-enabled = false;
-      indicator-position-max = 3;
-      toggle-state = false;
-      user-enabled = false;
+      indicator-position-max = 1;
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
+      background-color = "rgb(0,0,0)";
       background-opacity = 0.8;
       click-action = "cycle-windows";
+      custom-background-color = true;
       custom-theme-shrink = false;
       dash-max-icon-size = 48;
       dock-position = "BOTTOM";
@@ -319,6 +317,7 @@ with lib.hm.gvariant;
       preferred-monitor = -2;
       preferred-monitor-by-connector = "eDP-1";
       show-trash = false;
+      transparency-mode = "DYNAMIC";
     };
 
     "org/gnome/shell/extensions/extension-list" = {
@@ -394,7 +393,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/replaceActivitiesText" = {
-      icon-path = "/home/corona/.nixos-logo.svg";
+      icon-path = "/home/corona/.nixos-logo-symbolic.svg";
       icon-size = 1.365854;
       text = "";
     };
