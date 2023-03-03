@@ -49,7 +49,7 @@
         mediainfo mpd mpv
         ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
         odt2txt openssh
-        p7zip pandoc papirus-icon-theme parted pkg-config poppler_utils
+        p7zip pandoc papirus-icon-theme parted pkg-config php poppler_utils
         qt5ct qutebrowser
         ranger rar rnix-lsp starship
         texlive.combined.scheme-full trash-cli tree
