@@ -64,6 +64,11 @@ handle_extension() {
             7z l -p -- "${FILE_PATH}" && exit 5
             exit 1;;
 
+		md)
+			# markdown
+			glow -s dark -- "${FILE_PATH}" && exit 5
+			exit 1;;
+
         ## PDF
         # pdf)
         #     ## Preview as text conversion
@@ -192,6 +197,7 @@ handle_image() {
                      -jpeg -tiffcompression jpeg \
                      -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
                 && exit 6 || exit 1;;
+
 
 
         ## ePub, MOBI, FB2 (using Calibre)

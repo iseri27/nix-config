@@ -41,7 +41,7 @@
         dos2unix
         exa
         ffmpeg ffmpegthumbnailer file fontforge fzf
-        gcc git gnumake gnome-epub-thumbnailer
+        gcc git glow gnumake gnome-epub-thumbnailer
         imagemagick
         jq
         killall

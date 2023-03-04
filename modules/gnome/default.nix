@@ -23,8 +23,9 @@
         fuzzy-app-search
         just-perfection
         proxy-switcher
+        quick-settings-tweaker
         removable-drive-menu replace-activities-text
-        user-themes
+        user-avatar-in-quick-settings user-themes
     ]);
 
     # 不安装的软件与插件
