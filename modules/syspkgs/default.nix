@@ -35,12 +35,12 @@
         nur-corona.st
 
         # Basic Packages:
-        acpi aria atool
+        acpi aria asciidoc-full-with-plugins asciidoctor-with-extensions atool
         bat bc brightnessctl
         catdoc clang clang-tools croc ctags
         dos2unix
         exa
-        ffmpeg ffmpegthumbnailer file fontforge fzf
+        ffmpeg ffmpegthumbnailer file fontforge fribidi fzf
         gcc git glow gnumake gnome-epub-thumbnailer
         imagemagick
         jq
@@ -52,7 +52,7 @@
         p7zip pandoc papirus-icon-theme parted pkg-config php poppler_utils
         qt5ct qutebrowser
         ranger rar rnix-lsp starship
-        texlive.combined.scheme-full trash-cli tree
+        texlive.combined.scheme-full translate-shell trash-cli tree
         ueberzug unrar unzip
         vscode-fhs
         w3m wget whitesur-gtk-theme
