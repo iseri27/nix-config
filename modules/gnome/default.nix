@@ -19,7 +19,6 @@
         blur-my-shell
         caffeine
         dash-to-dock
-        extension-list
         fuzzy-app-search
         just-perfection
         proxy-switcher

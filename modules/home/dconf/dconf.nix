@@ -63,6 +63,15 @@ with lib.hm.gvariant;
       name = "办公";
     };
 
+    "org/gnome/desktop/background" = {
+      color-shading-type = "solid";
+      picture-options = "zoom";
+      picture-uri = "file:///home/corona/.local/share/backgrounds/2023-02-27-18-15-39-Konachan-353299.png";
+      picture-uri-dark = "file:///home/corona/.local/share/backgrounds/2023-02-27-18-15-39-Konachan-353299.png";
+      primary-color = "#000000000000";
+      secondary-color = "#000000000000";
+    };
+
     "org/gnome/desktop/input-sources" = {
       sources = [ (mkTuple [ "xkb" "us" ]) ];
       xkb-options = [ "ctrl:swapcaps" ];
@@ -127,6 +136,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/qq" = {
       application-id = "qq.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/transmission-gtk" = {
+      application-id = "transmission-gtk.desktop";
     };
 
     "org/gnome/desktop/peripherals/keyboard" = {
@@ -236,7 +249,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
-      night-light-last-coordinates = mkTuple [ 34.254501 108.9246 ];
+      night-light-last-coordinates = mkTuple [ 34.28149856011519 108.9246 ];
       night-light-schedule-automatic = true;
       night-light-schedule-from = 18.0;
       night-light-schedule-to = 7.0;
@@ -312,6 +325,8 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/caffeine" = {
       indicator-position-max = 1;
+      toggle-state = true;
+      user-enabled = true;
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
@@ -325,6 +340,8 @@ with lib.hm.gvariant;
       height-fraction = 0.9;
       preferred-monitor = -2;
       preferred-monitor-by-connector = "eDP-1";
+      show-mounts = false;
+      show-mounts-only-mounted = true;
       show-trash = false;
       transparency-mode = "DYNAMIC";
     };
@@ -403,7 +420,7 @@ with lib.hm.gvariant;
       datemenu-remove-media-control = false;
       datemenu-remove-notifications = false;
       list-buttons = "[{\"name\":\"Clutter_Actor\",\"label\":null,\"visible\":true},{\"name\":\"SystemItem\",\"label\":null,\"visible\":true},{\"name\":\"OutputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"InputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"St_BoxLayout\",\"label\":null,\"visible\":true},{\"name\":\"BrightnessItem\",\"label\":null,\"visible\":true},{\"name\":\"NMWiredToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMWirelessToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMModemToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMBluetoothToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMVpnToggle\",\"label\":null,\"visible\":true},{\"name\":\"BluetoothToggle\",\"label\":\"蓝牙\",\"visible\":true},{\"name\":\"PowerProfilesToggle\",\"label\":null,\"visible\":false},{\"name\":\"NightLightToggle\",\"label\":\"夜灯\",\"visible\":true},{\"name\":\"DarkModeToggle\",\"label\":\"暗色模式\",\"visible\":true},{\"name\":\"RfkillToggle\",\"label\":\"飞行模式\",\"visible\":false},{\"name\":\"RotationToggle\",\"label\":\"自动旋转\",\"visible\":false},{\"name\":\"QuickMenuToggle\",\"label\":\"代理\",\"visible\":true},{\"name\":\"CaffeineToggle\",\"label\":\"Caffeine\",\"visible\":true},{\"name\":\"DndQuickToogle\",\"label\":\"请勿打扰\",\"visible\":true},{\"name\":\"MediaSection\",\"label\":null,\"visible\":false},{\"name\":\"Notifications\",\"label\":null,\"visible\":false}]";
-      user-removed-buttons = [ "DndQuickToogle" "NightLightToggle" "RfkillToggle" "DarkModeToggle" ];
+      user-removed-buttons = [ "DndQuickToogle" "NightLightToggle" "DarkModeToggle" ];
       volume-mixer-enabled = true;
       volume-mixer-position = "top";
       volume-mixer-show-icon = true;
@@ -418,6 +435,12 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/soft-brightness" = {
       clone-mouse = false;
       use-backlight = false;
+    };
+
+    "org/gnome/shell/extensions/task-widget" = {
+      disabled-task-lists = [ "system-task-list" ];
+      last-active = "system-task-list";
+      merge-task-lists = false;
     };
 
     "org/gnome/shell/extensions/user-theme" = {

@@ -33,6 +33,8 @@
         nur-corona.gbkunzip
         nur-corona.qq
         nur-corona.st
+        nur-corona.adoc-utils
+        nur-corona.lyx-fonts
 
         # Basic Packages:
         acpi aria asciidoc-full-with-plugins asciidoctor-with-extensions atool
