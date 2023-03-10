@@ -1,0 +1,156 @@
+priority -50
+
+snippet title "= title" b
+= ${VISUAL}${1:title}
+$0
+endsnippet
+
+snippet sec "= section" b
+= ${VISUAL}${1:section}
+$0
+endsnippet
+
+snippet sub "== subsection" b
+== ${VISUAL}${1:subsection}
+$0
+endsnippet
+
+snippet ssub "=== subsubsection" b
+=== ${VISUAL}${1:subsubsection}
+$0
+endsnippet
+
+snippet par "==== paragraph" b
+==== ${VISUAL}${1:paragraph}
+$0
+endsnippet
+
+snippet spar "===== sub paragraph" b
+===== ${VISUAL}${1:sub paragraph}
+$0
+endsnippet
+
+snippet sspar "====== sub sub paragraph" b
+====== ${VISUAL}${1:sub sub paragraph}
+$0
+endsnippet
+
+snippet bd "bold text"
+**${VISUAL}$1**$0
+endsnippet
+
+snippet it "italic text"
+__${VISUAL}$1__$0
+endsnippet
+
+snippet code "inline code"
+``${VISUAL}$1``$0
+endsnippet
+
+snippet codeblock "code block" b
+[source, ${1:lang}]
+----
+${VISUAL}$0
+----
+endsnippet
+
+snippet qte "quoted text" b
+____
+${VISUAL}$0
+____
+endsnippet
+
+snippet img_inline "inline image"
+image:${VISUAL}${1:url}[${2:description and attrs}]$0
+endsnippet
+
+snippet img_block "block image" b
+image::${VISUAL}${1:url}[${2:description and attrs}]
+$0
+endsnippet
+
+snippet video "video::..." b
+video::${VISUAL}${1:url}[${2:description and attrs}]
+$0
+endsnippet
+
+snippet math_block "math block" b
+[latexmath]
+++++
+${VISUAL}$0
+++++
+endsnippet
+
+snippet math_inline "math inline"
+latexmath:[${VISUAL}$1]$0
+endsnippet
+
+snippet include "include::...[]" b
+include::${VISUAL}${1:file.adoc}[]
+$0
+endsnippet
+
+snippet settings_latexmath ":stem: latexmath" b
+:stem: latexmath
+$0
+endsnippet
+
+snippet settings_includedir ":includedir: ..." b
+:includedir: ${VISUAL}${1:path to includedir}
+$0
+endsnippet
+
+snippet settings_srcdir ":sourcedir: ..." b
+:sourcedir: ${1:path to srcdir}
+$0
+endsnippet
+
+snippet settings_doctype ":doctype: book" b
+:doctype: ${1:book}
+$0
+endsnippet
+
+snippet settings_chapterlabel ":chapter-label:" b
+:chapter-label:
+$0
+endsnippet
+
+snippet settings_secnums ":secums:" b
+:secnums:
+$0
+endsnippet
+
+snippet settings_toc ":toc:" b
+:toc: ${VISUAL}${1:left}
+$0
+endsnippet
+
+snippet settings_toclevels ":toclevels: ..." b
+:toclevels: ${1:2}
+$0
+endsnippet
+
+snippet settings_toctitle ":toc-title: Table of Contents" b
+:toc-title: ${1:目录}
+$0
+endsnippet
+
+snippet settings_author ":author: Author Name" b
+:author: ${1:Author Name}
+$0
+endsnippet
+
+snippet settings_coverimage ":front-cover-image: image::...[]" b
+:front-cover-image: image::${VISUAL}${1:path to iamge}[${2:description and attrs}]
+$0
+endsnippet
+
+snippet settingss_imagesdir ":imagesdir: ..." b
+:imagesdir: ${VISUAL}${1:path to images directory}
+$0
+endsnippet
+
+snippet settings_imagesoutdir ":imagesoutdir: ..." b
+:imagesoutdir: ${VISUAL}${1:path to images output directory}
+$0
+endsnippet

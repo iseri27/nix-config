@@ -47,7 +47,7 @@
         imagemagick
         jq
         killall
-        lazygit libarchive libime libnotify librsvg
+        lazygit libarchive libime libnotify librsvg lua53Packages.lua-lsp
         mediainfo mpd mpv
         ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
         odt2txt openssh

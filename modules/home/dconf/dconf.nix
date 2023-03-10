@@ -63,15 +63,6 @@ with lib.hm.gvariant;
       name = "办公";
     };
 
-    "org/gnome/desktop/background" = {
-      color-shading-type = "solid";
-      picture-options = "zoom";
-      picture-uri = "file:///home/corona/.local/share/backgrounds/2023-02-27-18-15-39-Konachan-353299.png";
-      picture-uri-dark = "file:///home/corona/.local/share/backgrounds/2023-02-27-18-15-39-Konachan-353299.png";
-      primary-color = "#000000000000";
-      secondary-color = "#000000000000";
-    };
-
     "org/gnome/desktop/input-sources" = {
       sources = [ (mkTuple [ "xkb" "us" ]) ];
       xkb-options = [ "ctrl:swapcaps" ];
@@ -249,7 +240,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
-      night-light-last-coordinates = mkTuple [ 34.28149856011519 108.9246 ];
+      night-light-last-coordinates = mkTuple [ 34.281499 108.9246 ];
       night-light-schedule-automatic = true;
       night-light-schedule-from = 18.0;
       night-light-schedule-to = 7.0;
@@ -313,7 +304,7 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.okular.desktop': <{'position': <8>}>, 'org.telegram.desktop.desktop': <{'position': <9>}>, 'transmission-gtk.desktop': <{'position': <10>}>, 'zotero-6.0.22.desktop': <{'position': <11>}>}]";
       disable-user-extensions = false;
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "extension-list@tu.berry" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" "quick-settings-avatar@d-go" "quick-settings-tweaks@qwreey" ];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" "quick-settings-avatar@d-go" "quick-settings-tweaks@qwreey" ];
       favorite-apps = [ "org.kde.dolphin.desktop" "st-256color.desktop" "org.kde.konsole.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.22.desktop" "code.desktop" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
@@ -325,8 +316,6 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/caffeine" = {
       indicator-position-max = 1;
-      toggle-state = true;
-      user-enabled = true;
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
@@ -344,12 +333,6 @@ with lib.hm.gvariant;
       show-mounts-only-mounted = true;
       show-trash = false;
       transparency-mode = "DYNAMIC";
-    };
-
-    "org/gnome/shell/extensions/extension-list" = {
-      button-icon = mkUint32 0;
-      hide-disabled = true;
-      toggle-unpin = false;
     };
 
     "org/gnome/shell/extensions/just-perfection" = {
@@ -420,6 +403,8 @@ with lib.hm.gvariant;
       datemenu-remove-media-control = false;
       datemenu-remove-notifications = false;
       list-buttons = "[{\"name\":\"Clutter_Actor\",\"label\":null,\"visible\":true},{\"name\":\"SystemItem\",\"label\":null,\"visible\":true},{\"name\":\"OutputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"InputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"St_BoxLayout\",\"label\":null,\"visible\":true},{\"name\":\"BrightnessItem\",\"label\":null,\"visible\":true},{\"name\":\"NMWiredToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMWirelessToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMModemToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMBluetoothToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMVpnToggle\",\"label\":null,\"visible\":true},{\"name\":\"BluetoothToggle\",\"label\":\"蓝牙\",\"visible\":true},{\"name\":\"PowerProfilesToggle\",\"label\":null,\"visible\":false},{\"name\":\"NightLightToggle\",\"label\":\"夜灯\",\"visible\":true},{\"name\":\"DarkModeToggle\",\"label\":\"暗色模式\",\"visible\":true},{\"name\":\"RfkillToggle\",\"label\":\"飞行模式\",\"visible\":false},{\"name\":\"RotationToggle\",\"label\":\"自动旋转\",\"visible\":false},{\"name\":\"QuickMenuToggle\",\"label\":\"代理\",\"visible\":true},{\"name\":\"CaffeineToggle\",\"label\":\"Caffeine\",\"visible\":true},{\"name\":\"DndQuickToogle\",\"label\":\"请勿打扰\",\"visible\":true},{\"name\":\"MediaSection\",\"label\":null,\"visible\":false},{\"name\":\"Notifications\",\"label\":null,\"visible\":false}]";
+      notifications-enabled = false;
+      notifications-hide-when-no-notifications = false;
       user-removed-buttons = [ "DndQuickToogle" "NightLightToggle" "DarkModeToggle" ];
       volume-mixer-enabled = true;
       volume-mixer-position = "top";

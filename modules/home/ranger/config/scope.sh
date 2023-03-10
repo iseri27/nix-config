@@ -48,6 +48,7 @@ OPENSCAD_IMGSIZE="${RNGR_OPENSCAD_IMGSIZE:-1000,1000}"
 OPENSCAD_COLORSCHEME="${RNGR_OPENSCAD_COLORSCHEME:-Tomorrow Night}"
 
 handle_extension() {
+    local DEFAULT_SIZE="1920x1080"
     case "${FILE_EXTENSION_LOWER}" in
         ## Archive
         a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
@@ -68,6 +69,19 @@ handle_extension() {
 			# markdown
 			glow -s dark -- "${FILE_PATH}" && exit 5
 			exit 1;;
+
+		adoc)
+			# asciidoc
+			adoc2pdf "${FILE_PATH}" -o "${IMAGE_CACHE_PATH%.*}.pdf" && pdftoppm -f 1 -l 1 \
+                     -scale-to-x "${DEFAULT_SIZE%x*}" \
+                     -scale-to-y -1 \
+                     -singlefile \
+                     -jpeg -tiffcompression jpeg \
+                     -- "${IMAGE_CACHE_PATH%.*}.pdf" "${IMAGE_CACHE_PATH%.*}" \
+					 && rm "${IMAGE_CACHE_PATH%.*}.pdf" && exit 6
+            env COLORTERM=8bit bat --color=always --style="plain" \
+                -- "${FILE_PATH}" && exit 5
+			;;
 
         ## PDF
         # pdf)
