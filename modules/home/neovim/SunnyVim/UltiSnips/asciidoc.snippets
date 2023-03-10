@@ -1,0 +1,89 @@
+priority -50
+
+snippet title "= title" b
+= ${VISUAL}${1:title}
+$0
+endsnippet
+
+snippet sec "= section" b
+= ${VISUAL}${1:section}
+$0
+endsnippet
+
+snippet sub "== subsection" b
+== ${1:subsection}
+$0
+endsnippet
+
+snippet ssub "=== subsubsection" b
+=== ${1:subsubsection}
+$0
+endsnippet
+
+snippet par "==== paragraph" b
+==== ${1:paragraph}
+$0
+endsnippet
+
+snippet spar "===== sub paragraph" b
+===== ${1:sub paragraph}
+$0
+endsnippet
+
+snippet sspar "====== sub sub paragraph" b
+====== ${1:sub sub paragraph}
+$0
+endsnippet
+
+snippet bd "bold text"
+**${VISUAL}$1**$0
+endsnippet
+
+snippet it "italic text"
+__${VISUAL}$1__$0
+endsnippet
+
+snippet code "inline code"
+``${VISUAL}$1``$0
+endsnippet
+
+snippet codeblock "code block" b
+[source, ${1:lang}]
+----
+${VISUAL}$0
+----
+endsnippet
+
+snippet qte "quoted text" b
+____
+${VISUAL}$0
+____
+endsnippet
+
+snippet img "image" b
+image:${VISUAL}${1:url}[${2:description}]$0
+endsnippet
+
+snippet mathblock "math block" b
+[latexmath]
+++++
+${VISUAL}$0
+++++
+endsnippet
+
+snippet include "include::...[]" b
+include::${VISUAL}${1:file.adoc}[]$0
+endsnippet
+
+snippet import_math ":stem: latexmath" b
+:stem: latexmath
+$0
+endsnippet
+
+snippet import_includedir ":includedir: ..." b
+:includedir: ${VISUAL}${1:path to includedir}$0
+endsnippet
+
+snippet import_srcdir ":sourcedir: ..." b
+:sourcedir: ${VISUAL}${1:path to srcdir}$0
+endsnippet
