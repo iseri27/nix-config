@@ -125,6 +125,10 @@ with lib.hm.gvariant;
       application-id = "org.telegram.desktop.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-wezfurlong-wezterm" = {
+      application-id = "org.wezfurlong.wezterm.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/qq" = {
       application-id = "qq.desktop";
     };
@@ -240,7 +244,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
-      night-light-last-coordinates = mkTuple [ 34.281499 108.9246 ];
+      night-light-last-coordinates = mkTuple [ 34.263842 108.98258 ];
       night-light-schedule-automatic = true;
       night-light-schedule-from = 18.0;
       night-light-schedule-to = 7.0;
@@ -248,7 +252,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/" ];
       help = [];
       www = [ "<Alt>c" ];
     };
@@ -257,18 +261,6 @@ with lib.hm.gvariant;
       binding = "<Alt>e";
       command = "dolphin";
       name = "文件管理器";
-    };
-
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-      binding = "<Alt>Return";
-      command = "st";
-      name = "st";
-    };
-
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-      binding = "<Alt>z";
-      command = "zotero";
-      name = "zotero";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
@@ -292,20 +284,21 @@ with lib.hm.gvariant;
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6" = {
       binding = "<Control><Alt>t";
       command = "konsole";
-      name = "启动终端";
+      name = "terminal";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7" = {
       binding = "<Alt>semicolon";
-      command = "sh -c \"st -e nvim -n ~/.todolist\"";
+      command = "sh -c \"konsole -e nvim -n ~/.todolist\"";
       name = "Todo";
     };
 
     "org/gnome/shell" = {
       app-picker-layout = "[{'b7953d8a-9aa5-43fd-ac24-b7228a5df778': <{'position': <0>}>, '03ce591a-01dc-4a68-8cce-a1fd8633cc9a': <{'position': <1>}>, '6fb03af4-4ef5-49fd-b8e6-9ebb51611ff6': <{'position': <2>}>, 'org.kde.ark.desktop': <{'position': <3>}>, 'cantata.desktop': <{'position': <4>}>, 'org.kde.gwenview.desktop': <{'position': <5>}>, 'org.kde.kate.desktop': <{'position': <6>}>, 'org.keepassxc.KeePassXC.desktop': <{'position': <7>}>, 'org.kde.okular.desktop': <{'position': <8>}>, 'org.telegram.desktop.desktop': <{'position': <9>}>, 'transmission-gtk.desktop': <{'position': <10>}>, 'zotero-6.0.22.desktop': <{'position': <11>}>}]";
       disable-user-extensions = false;
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "replaceActivitiesText@pratap.fastmail.fm" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" "quick-settings-avatar@d-go" "quick-settings-tweaks@qwreey" ];
-      favorite-apps = [ "org.kde.dolphin.desktop" "st-256color.desktop" "org.kde.konsole.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.22.desktop" "code.desktop" ];
+      disabled-extensions = [];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "blur-my-shell@aunetx" "caffeine@patapon.info" "command-menu@arunk140.com" "dash-to-dock@micxgx.gmail.com" "gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com" "just-perfection-desktop@just-perfection" "ProxySwitcher@flannaghan.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "kimpanel@kde.org" "drive-menu@gnome-shell-extensions.gcampax.github.com" "soft-brightness@fifi.org" "appMenuIcon@pratap.fastmail.fm" "quick-settings-avatar@d-go" "quick-settings-tweaks@qwreey" "replaceActivitiesText@pratap.fastmail.fm" ];
+      favorite-apps = [ "org.kde.dolphin.desktop" "org.kde.konsole.desktop" "qq.desktop" "google-chrome.desktop" "zotero-6.0.22.desktop" "code.desktop" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -315,7 +308,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 1;
+      indicator-position-max = 2;
     };
 
     "org/gnome/shell/extensions/dash-to-dock" = {
@@ -402,9 +395,13 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/quick-settings-tweaks" = {
       datemenu-remove-media-control = false;
       datemenu-remove-notifications = false;
-      list-buttons = "[{\"name\":\"Clutter_Actor\",\"label\":null,\"visible\":true},{\"name\":\"SystemItem\",\"label\":null,\"visible\":true},{\"name\":\"OutputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"InputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"St_BoxLayout\",\"label\":null,\"visible\":true},{\"name\":\"BrightnessItem\",\"label\":null,\"visible\":true},{\"name\":\"NMWiredToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMWirelessToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMModemToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMBluetoothToggle\",\"label\":null,\"visible\":true},{\"name\":\"NMVpnToggle\",\"label\":null,\"visible\":true},{\"name\":\"BluetoothToggle\",\"label\":\"蓝牙\",\"visible\":true},{\"name\":\"PowerProfilesToggle\",\"label\":null,\"visible\":false},{\"name\":\"NightLightToggle\",\"label\":\"夜灯\",\"visible\":true},{\"name\":\"DarkModeToggle\",\"label\":\"暗色模式\",\"visible\":true},{\"name\":\"RfkillToggle\",\"label\":\"飞行模式\",\"visible\":false},{\"name\":\"RotationToggle\",\"label\":\"自动旋转\",\"visible\":false},{\"name\":\"QuickMenuToggle\",\"label\":\"代理\",\"visible\":true},{\"name\":\"CaffeineToggle\",\"label\":\"Caffeine\",\"visible\":true},{\"name\":\"DndQuickToogle\",\"label\":\"请勿打扰\",\"visible\":true},{\"name\":\"MediaSection\",\"label\":null,\"visible\":false},{\"name\":\"Notifications\",\"label\":null,\"visible\":false}]";
+      input-always-show = false;
+      input-show-selected = false;
+      list-buttons = "[{\"name\":\"Clutter_Actor\",\"label\":null,\"visible\":true},{\"name\":\"SystemItem\",\"label\":null,\"visible\":true},{\"name\":\"OutputStreamSlider\",\"label\":null,\"visible\":true},{\"name\":\"InputStreamSlider\",\"label\":null,\"visible\":false},{\"name\":\"St_BoxLayout\",\"label\":null,\"visible\":true},{\"name\":\"BrightnessItem\",\"label\":null,\"visible\":true},{\"name\":\"NMWiredToggle\",\"label\":null,\"visible\":false},{\"name\":\"NMWirelessToggle\",\"label\":\"STU\",\"visible\":true},{\"name\":\"NMModemToggle\",\"label\":null,\"visible\":false},{\"name\":\"NMBluetoothToggle\",\"label\":null,\"visible\":false},{\"name\":\"NMVpnToggle\",\"label\":null,\"visible\":false},{\"name\":\"BluetoothToggle\",\"label\":\"蓝牙\",\"visible\":true},{\"name\":\"PowerProfilesToggle\",\"label\":\"平衡\",\"visible\":true},{\"name\":\"NightLightToggle\",\"label\":\"夜灯\",\"visible\":true},{\"name\":\"DarkModeToggle\",\"label\":\"暗色模式\",\"visible\":false},{\"name\":\"RfkillToggle\",\"label\":\"飞行模式\",\"visible\":true},{\"name\":\"RotationToggle\",\"label\":\"自动旋转\",\"visible\":false},{\"name\":\"QuickMenuToggle\",\"label\":\"代理\",\"visible\":true},{\"name\":\"CaffeineToggle\",\"label\":\"Caffeine\",\"visible\":true},{\"name\":\"DndQuickToogle\",\"label\":\"请勿打扰\",\"visible\":true}]";
+      media-control-enabled = false;
       notifications-enabled = false;
       notifications-hide-when-no-notifications = false;
+      output-show-selected = false;
       user-removed-buttons = [ "DndQuickToogle" "NightLightToggle" "DarkModeToggle" ];
       volume-mixer-enabled = true;
       volume-mixer-position = "top";
@@ -446,24 +443,6 @@ with lib.hm.gvariant;
 
     "org/gnome/tweaks" = {
       show-extensions-notice = false;
-    };
-
-    "org/gtk/gtk4/settings/color-chooser" = {
-      selected-color = mkTuple [ true 0.0 ];
-    };
-
-    "org/gtk/gtk4/settings/file-chooser" = {
-      date-format = "regular";
-      location-mode = "path-bar";
-      show-hidden = false;
-      show-size-column = true;
-      show-type-column = true;
-      sidebar-width = 140;
-      sort-column = "name";
-      sort-directories-first = false;
-      sort-order = "ascending";
-      type-format = "category";
-      window-size = mkTuple [ 777 419 ];
     };
 
     "org/gtk/settings/file-chooser" = {

@@ -32,7 +32,6 @@
         nur-corona.cfft
         nur-corona.gbkunzip
         nur-corona.qq
-        nur-corona.st
         nur-corona.adoc-utils
         nur-corona.lyx-fonts
 
@@ -47,22 +46,22 @@
         imagemagick
         jq
         killall
-        lazygit libarchive libime libnotify librsvg lua53Packages.lua-lsp
+        lazygit libarchive libime libossp_uuid libnotify librsvg lua53Packages.lua-lsp
         mediainfo mpd mpv
-        ncdu neofetch neovim neovim-remote networkmanagerapplet nodejs nodePackages.bash-language-server
+        ncdu neofetch neovim neovim-remote networkmanagerapplet node2nix nodejs nodePackages.bash-language-server
         odt2txt openssh
         p7zip pandoc papirus-icon-theme parted pkg-config php poppler_utils
         qt5ct qutebrowser
         ranger rar rnix-lsp starship
-        texlive.combined.scheme-full translate-shell trash-cli tree
+        texlive.combined.scheme-full trash-cli tree
         ueberzug unrar unzip
         vscode-fhs
-        w3m wget whitesur-gtk-theme
+        w3m wget whitesur-gtk-theme wl-clipboard
         xclip xlsx2csv
-        yarn
+        yarn yarn2nix ydict
         zathura zip
 
-        # 桌面软件
+        # desktop softwares
         cantata
         google-chrome
         keepassxc

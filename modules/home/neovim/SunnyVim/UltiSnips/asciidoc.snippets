@@ -90,6 +90,11 @@ include::${VISUAL}${1:file.adoc}[]
 $0
 endsnippet
 
+snippet hr "分割线" b
+---
+$0
+endsnippet
+
 snippet settings_latexmath ":stem: latexmath" b
 :stem: latexmath
 $0
@@ -145,12 +150,22 @@ snippet settings_coverimage ":front-cover-image: image::...[]" b
 $0
 endsnippet
 
-snippet settingss_imagesdir ":imagesdir: ..." b
+snippet settings_imagesdir ":imagesdir: ..." b
 :imagesdir: ${VISUAL}${1:path to images directory}
 $0
 endsnippet
 
 snippet settings_imagesoutdir ":imagesoutdir: ..." b
 :imagesoutdir: ${VISUAL}${1:path to images output directory}
+$0
+endsnippet
+
+snippet settings_hardbreak ":hardbreak-option: 强制换行" b
+:hardbreak-option:
+$0
+endsnippet
+
+snippet text_center "段落居中" b
+[.text-center]
 $0
 endsnippet
