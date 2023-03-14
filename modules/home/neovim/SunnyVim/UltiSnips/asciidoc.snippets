@@ -35,11 +35,11 @@ snippet sspar "====== sub sub paragraph" b
 $0
 endsnippet
 
-snippet bd "bold text"
+snippet "\\?bd" "bold text" r
 **${VISUAL}$1**$0
 endsnippet
 
-snippet it "italic text"
+snippet "\\?it" "italic text" r
 __${VISUAL}$1__$0
 endsnippet
 
@@ -61,17 +61,19 @@ ____
 endsnippet
 
 snippet img_inline "inline image"
-image:${VISUAL}${1:url}[${2:description and attrs}]$0
+image:${VISUAL}${1}[${2:description and attrs}]$0
 endsnippet
 
 snippet img_block "block image" b
-image::${VISUAL}${1:url}[${2:description and attrs}]
-$0
+image::${VISUAL}${1}[${2:description and attrs}]$0
 endsnippet
 
 snippet video "video::..." b
-video::${VISUAL}${1:url}[${2:description and attrs}]
-$0
+video::${VISUAL}${1}[${2:description and attrs}]$0
+endsnippet
+
+snippet audio "audio::..." b
+audio::${VISUAL}$1[${2:description and attrs}]$0
 endsnippet
 
 snippet math_block "math block" b
@@ -86,86 +88,73 @@ latexmath:[${VISUAL}$1]$0
 endsnippet
 
 snippet include "include::...[]" b
-include::${VISUAL}${1:file.adoc}[]
-$0
+include::${VISUAL}${1:file.adoc}[]$0
 endsnippet
 
 snippet hr "分割线" b
 ---
-$0
 endsnippet
 
 snippet settings_latexmath ":stem: latexmath" b
 :stem: latexmath
-$0
 endsnippet
 
 snippet settings_includedir ":includedir: ..." b
 :includedir: ${VISUAL}${1:path to includedir}
-$0
 endsnippet
 
 snippet settings_srcdir ":sourcedir: ..." b
 :sourcedir: ${1:path to srcdir}
-$0
 endsnippet
 
 snippet settings_doctype ":doctype: book" b
 :doctype: ${1:book}
-$0
 endsnippet
 
 snippet settings_chapterlabel ":chapter-label:" b
 :chapter-label:
-$0
 endsnippet
 
 snippet settings_secnums ":secums:" b
 :secnums:
-$0
 endsnippet
 
 snippet settings_toc ":toc:" b
 :toc: ${VISUAL}${1:left}
-$0
 endsnippet
 
 snippet settings_toclevels ":toclevels: ..." b
 :toclevels: ${1:2}
-$0
 endsnippet
 
 snippet settings_toctitle ":toc-title: Table of Contents" b
 :toc-title: ${1:目录}
-$0
 endsnippet
 
 snippet settings_author ":author: Author Name" b
 :author: ${1:Author Name}
-$0
 endsnippet
 
 snippet settings_coverimage ":front-cover-image: image::...[]" b
 :front-cover-image: image::${VISUAL}${1:path to iamge}[${2:description and attrs}]
-$0
 endsnippet
 
 snippet settings_imagesdir ":imagesdir: ..." b
 :imagesdir: ${VISUAL}${1:path to images directory}
-$0
 endsnippet
 
 snippet settings_imagesoutdir ":imagesoutdir: ..." b
 :imagesoutdir: ${VISUAL}${1:path to images output directory}
-$0
 endsnippet
 
 snippet settings_hardbreak ":hardbreak-option: 强制换行" b
 :hardbreak-option:
-$0
+endsnippet
+
+snippet settings_nolastupdate ":last-update-label!:" b
+:last-update-label!:
 endsnippet
 
 snippet text_center "段落居中" b
 [.text-center]
-$0
 endsnippet
